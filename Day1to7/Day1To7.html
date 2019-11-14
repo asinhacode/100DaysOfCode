@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<style>
+    .day_counter{
+        color: crimson;
+    }
+
+    .importantHeading{
+        color: tomato;
+    }
+
+    p{
+        font-size: larger;
+        font-family: monospace;
+    }
+
+    .Quote{
+        font-family: monospace;
+        font-size: larger;
+    }
+</style>
+
+<body>
+   <b> <i><q class="Quote">Clouds come floating into my life, no longer to carry rain or usher storm, but to add color to my sunset sky.</q></i>-Tagore</b>
+    <h1 class="importantHeading">Plan for the next 100 days for</h1>
+    <!-- Enter your name-->
+    <h2><input type="text" placeholder="Enter Your Name!"></h2>
+
+        <!-- Add which day you are on-->
+
+    <form id="daily">
+        <label for="Mon">
+            <input type="radio" id="Mon" name="daily" value="Mon"> Monday
+        </label>
+
+        <label for="Tue">
+            <input type="radio" id="Tue" name="daily" value="Tue"> Tuesday
+        </label>
+            
+        <label for="Wed">
+            <input type="radio" id="Wed" name="daily" value="Wed"> Wednesday
+        </label>
+                    
+        <label for="Thr">
+            <input type="radio" id="Thr" name="daily" value="Thr"> Thursday
+        </label>
+                    
+        <label for="Fri">
+            <input type="radio" id="Fri" name="daily" value="Fri"> Friday
+        </label>
+                        
+        <label for="Sat">
+            <input type="radio" id="Sat" name="daily" value="Sat"> Saturday
+        </label>
+                            
+        <label for="Sun">
+            <input type="radio" id="Sun" name="daily" value="Sun"> Sunday
+        </label>
+
+    </form>
+    <hr>     <!-- draw a line -->
+
+
+        <!-- KEEP TRACK OF YOUR GOALS-->
+
+    <h3>Days 
+        <ol>
+            <li>
+                <a href="#11102019">Day 1</a>
+            </li>
+
+            <li>
+                <a href="#11112019">Day 2</a>
+            </li>
+
+            <li>
+                <a href="#11122019">Day 3 </a>
+            </li>
+
+            <li>
+                <a href="#11132019">Day 4 </a>
+            </li>
+         </ol>
+    </h3>
+    <hr>
+
+
+    <div>
+    <h6 id="11102019" ,class="day_counter">DATED: 10 NOV 2019</h6>
+        <p>Started html from freecodecamp.
+            <ul>     <!-- UNORDERED LIST -->
+
+                <li> 
+                    <!-- IMG tag-->
+                    Image tag
+                    <img src="" alt="">
+                </li>
+
+                <li>
+                    <!-- ANCHOR tag-->
+                    <a href="">Link Description</a>
+                </li>
+
+                <li>
+                    Create an id for a section. Connect with anchor tag using #id of the section.
+
+                </li>
+            </ul>
+        </p>
+    </div>     <!-- CONTAINS ENTIRE THING TOGETHER -->
+
+    <hr>
+
+    <div>
+        <h6 id="11112019" ,class="day_counter"> Day 2</h6>
+        <p>
+            Starting with HTML.
+            <ul>
+                <li>
+                    Nesting anchor within a paragraph
+                </li>
+
+                <li>
+                    Dead links: href = "#" keeps a storage place for later use.
+                </li>
+
+                <li>
+                    Image tag within an anchor tag makes the image turn into a clickable link.
+                </li>
+
+                <li>
+                    Asking the user to input: input type needs to be text. It is self closing.
+                    Place holder gives initial values like, add name
+                </li>
+
+                <li>
+                    Buttons, type submit and texted
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            DISCREET MATHEMATICS
+            <br>
+            CHAPTER 8
+            <ul>
+                <li>
+                    Product Rule: n1 * n2 * n3
+                    <br>
+                    Divide a task into different tasks. For each task there are other ways to do another.
+
+                </li>
+
+                <li>
+                    Sum Rule:    n1 + n2 + n3
+                    <br>
+                    Must be disjoint. 
+                </li>
+            </ul>
+            
+        </p>
+
+        <p>
+            Linked List
+            <ul>
+                <li>
+                        <!-- ADD AN ANCHOR FOR LINKS -->
+
+                    <a href="https://github.com/asinhacode/goodRich.git ">Git hub repo </a> Chapter 3   
+                </li>
+                <li>
+                    Creating a linked list
+                </li>
+
+                <li>
+                    Adding element at the head
+                </li>
+            </ul>
+        </p>
+
+
+    </div>
+    <hr>
+
+    <div>
+        <h6 id="11122019", class="day_counter"> Day 3</h6>
+        <p>
+            <ul>
+                <li>
+                    Radio Buttons in freecodecamp.
+
+                    <form id="Week">
+                        <label for="Tuesday">
+                            <input type="radio" id="Tuesday" name="Week"> Tuesday
+                        </label>
+
+                        <label for="Wednesday">
+                            <input type="radio" id="Wednesday" name="Week"> Wednesday
+                        </label>
+
+                    </form>
+                </li>
+
+                <li>
+                    Checkboxes
+                    <form id="ToDo">
+                        <label for="freeCodeCamp">
+                            <input type="checkbox" id="freeCodeCamp" name="ToDo"> freeCodeCamp
+                        </label>
+
+                        <label for="Java">
+                            <input type="checkbox" id="Java" name="ToDo"> Java
+
+                        </label>
+
+                        <label for="DiscreetMath">
+                                <input type="checkbox" id="DiscreetMath" name="ToDo"> DiscreetMath
+
+                        </label>
+
+                    </form>
+
+                </li>
+
+                <li>
+                    PostgresSQL
+                    <ol>
+                        <li> ALTER TABLE person ADD PRIMARY KEY(id);</li>
+                        <li> DELETE FROM person WHERE id = 999;     </li>
+                        <li> SELECT gender, COUNT(*) FROM person GROUP BY gender;</li>
+                        <li> SELECT email, COUNT(*) FROM person GROUP BY email ORDER BY email;</li>
+                        <li> ALTER TABLE person ADD CONSTRAINT unique_email UNIQUE(email);</li>
+
+                    </ol>
+                </li>
+                
+            </ul>
+        </p>
+    </div>
+    <hr>
+
+    <div>
+        <h6 id="11132019", class="day_counter"> Day 4</h6>
+        <p>
+            <ol>
+                <li>
+                freeCodeCamp, CSS
+            </li>
+            <ul>
+                <li>
+                    inline style
+                    <i>(See comment on document)</i>
+                    <!-- <h2 style="color:red;">CatPhotoApp</h2> -->
+                </li>
+
+                <li>
+                    class declaration under style tag
+                </li>
+
+                <li>
+                    font-family:monospace
+                </li>
+
+                <li>
+                    font-size:16px
+                </li>
+            </ul>
+
+
+                <li>Bubble Sort.</li>
+                <ul>
+                    <li>Understood the concept. </li>
+                    <li>Each loop bubbles up the largest element</li>
+                    <li>2 seperate implementations. BOTH CONFUSING</li>
+                </ul>
+
+
+            </ol>
+
+        </p>
+    </div>
+
+</body>
+</html>
