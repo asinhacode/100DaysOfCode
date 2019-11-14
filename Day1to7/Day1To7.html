@@ -18,11 +18,23 @@
         font-family: monospace;
         font-size: larger;
     }
+
+    .title{
+        border-style: dotted;
+        border-width: 1px;
+        border-color:orange;
+        margin: 20px;
+        padding-left: 400px;
+    }
+
+    .DAY5{
+        background-color: silver;
+    }
 </style>
 
 <body>
    <b> <i><q class="Quote">Clouds come floating into my life, no longer to carry rain or usher storm, but to add color to my sunset sky.</q></i>-Tagore</b>
-    <h1 class="importantHeading">Plan for the next 100 days for</h1>
+    <h1 class="importantHeading title">Plan for the next 100 days for</h1>
     <!-- Enter your name-->
     <h2><input type="text" placeholder="Enter Your Name!"></h2>
 
@@ -79,6 +91,10 @@
 
             <li>
                 <a href="#11132019">Day 4 </a>
+            </li>
+
+            <li>
+                <a href="#11142019"> Day 5 </a>
             </li>
          </ol>
     </h3>
@@ -273,12 +289,50 @@
                     <li>Each loop bubbles up the largest element</li>
                     <li>2 seperate implementations. BOTH CONFUSING</li>
                 </ul>
+            
+            <li>PostgresSQL</li>
+            <ul>
+                <li>delete from person where country = 'Bangladesh';</li>
+                <li>UPDATE person SET email = 'gae@gmail.com' WHERE id = 4;</li>
+                <li>DROP TABLE person;</li>
+                <li>car_id BIGINT REFERENCES car (id) -- add secondary key /li>
+                <li>UPDATE p SET car_id = id;</li>
+                <li>test=# SELECT * FROM p JOIN car ON p.car_id = car.id;</li>
 
+            </ul>
 
             </ol>
 
         </p>
+        <hr>
     </div>
+
+    <div class="DAY5">
+        <h6 id="11142019", class="day_counter"> Day 5</h6>
+
+            <ol>
+                <li> CSS 
+                    <ul>
+                        <li>Adding Border property. <i>See comment in HTML docs</i></li>
+                        <!-- 
+                            .thick-green-border
+                            {
+                                border-color: green;
+                                border-width: 10px;
+                                border-style: solid;
+                            }
+                        -->
+
+                        <li>Adding background color</li>
+                        <li>Using id attributes. For a singular element. Not DOTS but HASHTAGS.</li>
+                        <li>PADDING; space between element and border</li>
+                        <li>MARGIN; space between border and surrounding element</li>
+                    </ul>
+                </li>
+            </ol>
+
+    </div>
+
 
 </body>
 </html>
