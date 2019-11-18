@@ -3,31 +3,222 @@
 <!DOCTYPE html>
 <html>
 
+
+<style>
+
+    .dayDeclaration{
+        text-align: center;
+        
+    }
+
+    .body{
+        background-color: #d3d3d3;
+    }
+
+    .day8{
+        background-color: #d4d4d4;
+
+    }
+    
+</style>
+
+
+
 <head>
     <title>From Day 8 to Day 14</title>
 </head>
 
+
+
+
 <body>
 
-    <div id="11172019">
+    <div id="11172019" class="daySettings, day8">
+    
+
+        <h2 class="dayDeclaration">DAY 8</h2>
+        
+        <p class="dayDeclaration">
+
+        <i>Learning never exhausts the mind. - Leonardo Da Vinci</i>
+        <br>
+        <i>Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.
+                Thomas A. Edison</i>
+        </p>
+
         <ol>
-            <li>
+            <li> CSS
+                <br>
+                <br>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li> <b>Instead of id and class, you can use [type = 'checkbox']</b>
+                        <br>
+                        <i>Check document comment</i>
+                        <!-- [type='checkbox']
+                            {
+                                margin: 10px 0px 15px 0px;
+                            }
+                        -->
+                    </li>
+                    <br>
+                    <li><b>Units of measurements. px, in and mm</b></li>
+                    <br>
+                    <li><b>Relative measurements: 1.5 em </b>
+                        <br>
+                        <i>1.5 Relative to the font size.</i>
+                    </li>
+                    <br>
+                    <li><b>Background-color</b></li>
+                    <br>
+                    <li><b>Classes OVERRIDE body properties.</b></li>
+                    <br>
+                    <li><b>How to add Multiple Classes.</b>
+                        <br>
+                    <i>class="class1 class2"</li>
+                    
+                    The second declaration will always take precedence over the first when in style tag.</i>
+                    <br>
                 </ul>
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
+
+            <br>
+            <li> Database
+            <br>
+            <br>
+                <ul>
+                    <li><b>Integrity Constraint - Primary and Secondary Keys</b></li>
+                    <br>
+                    <i>Makes databases meaningful.</i>
+                    <br>
+                    <i>Tuple Constraint: </i>
+                    <br>
+                    <i>Domain Constraint: Single attribute</i>
+
+                    <br>
+                    <br>
+                    <li><b>Minimal Superkey, least amount of attributes needed to identify a unique tuple</b>
+                    <br>
+                    <br>
+                    <i>
+                    Primary Key: No null values are allowed. Underlined.
+                    <br>
+                    Foreign Key: Primary key of other tables added to another table.
+                    </i>
+                    </li>
+                    <br>
+
+                    <li><b><i>Side Note:</i> created a table in postgresql.</b></li>
+                    <br>
+
+                    <li><b>Relational Algebra</b></li>
+                    <br>
+                    <i>Union</i>
+                    <br>           
+                    
+                </ul>
+            </li>
+            <br>
+            <br>
+
+            <li> <b>Data Structures</b>
+                <br>
+                <br>
+                <ul>
+                    <li>add first</li>
+                    <li>add last</li>
+                    <li>remove first</li>
+                    
+                </ul>
+            </li>
+
+            <li>Algorithms</li>
+            <ul>
+                <br>
+                <li>Sorting
+                    <br>
+                        -------------------------------------------------------------------------------------------------------
+                </li>
+                
+                <i>Insertion Sort</i>
+                <pre>
+                <code>
+                for j = 2 to n 
+                    do key = A[j]
+
+                    i = j - i
+                    while i > 0 and A[i] > key
+                        do A[i+1] = A[i]
+                        i--
+                    A[i+1] = key
+                </code>
+            </pre>
+-------------------------------------------------------------------------------------------------------
+            <pre>
+                <code>
+                        package insertionSort;
+
+                        public class InsertionSort {
+                        
+                            
+                        
+                        
+                        
+                            public static void insertionSort(int array[]) 
+                            {  
+                                for (int j = 1; j < array.length; j++)
+                                {  
+                                    int key = array[j];  
+                                    int i = j-1;  
+                                    while ( (i > -1) && ( array [i] > key ) ) 
+                                    {  
+                                        array [i+1] = array [i];  
+                                        i--;  
+                                    }  
+                                    array[i+1] = key;  
+                                }  
+                            }  
+                               
+                            public static void main(String a[]){    
+                                int[] arr1 = {9,14,3,2,43,11,58,22};    
+                                System.out.println("Before Insertion Sort");    
+                                for(int i:arr1){    
+                                    System.out.print(i+" ");    
+                                }    
+                                System.out.println();    
+                                    
+                                insertionSort(arr1);//sorting array using insertion sort    
+                                   
+                                System.out.println("After Insertion Sort");    
+                                for(int i:arr1){    
+                                    System.out.print(i+" ");    
+                                }    
+                            }    
+                        } 
+                        
+                </code>
+            </pre>
+                <br>
+                <br>
+                <li><a href="https://youtu.be/JPyuH4qXLZ0">Current Lecture</a></li>
+                <br>
+                <br>
+                <li> Written code for insertion sort.</li>
+                <br>
+                <br>
+                <li></li>
+                <br>
+                <br>
+                <li></li>
+                <br>
+                <br>
+            </ul>
             <li></li>
 
         </ol>
     </div>
+    <hr>
+
+
 
     <div id="11182019">
             <ol>
