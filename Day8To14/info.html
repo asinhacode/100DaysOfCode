@@ -11,6 +11,10 @@
         
     }
 
+    .topic{
+        color: rgb(0, 0, 0);
+    }
+
     .body{
         background-color: #d3d3d3;
     }
@@ -22,6 +26,10 @@
 
     .day9{
         background-color: #e0e0e0   ;
+    }
+
+    .day10{
+        background-color: aliceblue;
     }
     
 </style>
@@ -223,7 +231,7 @@
                 There are no limits. There are only plateaus. And you must not stay there. You must go beyond them.
                 Bruce Lee</i><br>
                 ------------------------------------------------------------------------------------------------------------------------------------------------------
-            <ol>
+            <ol >
                 <li> CSS 
                     <ul>
 
@@ -245,27 +253,54 @@
                         <br>
 
                         <li>CSS variable declaration: --penguin-skin: gray;</li>
-                        <li></li>
                     </ul>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <br>
+                <br>
+
+                <li>Marcus Biel : enum</li>
+                <br>
+                <br>
+                
     
             </ol>
         </div>
 
-    <div id="11192019">
+        <hr>
+    <div id="11192019" class="day10">
+        <h2 class="dayDeclaration">DAY 10</h2>
+        <i>I hated every minute of training, but I said, "Don't quit. Suffer now and live the rest of your life as a champion."
+                Muhammad Ali</i>
+
+<br>
+                ------------------------------------------------------------------------------------------------------------------------------------------------------
+
                 <ol>
-                    <li>
+                    <li> CSS variable declaration continuation
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <br>
+                            <br>
+                            <li>    --penguin-skin: gray;<br> <i>Variable declaration</i></li>
+                            <br>
+                            <br>
+                            <li>background: var(--penguin-skin);</li>
+                            <br>
+                            <br>
+                            <li> fall back values. (used for debugging) <br> <i> background: var(--pengiun-skin, black);</i></li>
+                            <br>
+                            <br>
+                            <li>fall back for browser compatibility issues</li>
+                            <br>
+                            <br>
+                            <li>CSS inheritance; :root makes the property global!</li>
+                            <br>
+                            <br>
+                            <!-- 
+                                :root{
+                                    --penguine-belly: pink;
+                                }
+                            -->
+                            <li>changing :root to another value, internally. Class specification</li>
                         </ul>
                     </li>
                     <li></li>
