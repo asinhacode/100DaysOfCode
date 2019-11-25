@@ -1,0 +1,501 @@
+<!-- First 7 days, I learnt to be patient and consistent. I do not need to be a superstar, just keep at it. One step at a time.-->
+
+<!DOCTYPE html>
+<html>
+
+
+<style>
+
+    .dayDeclaration{
+        text-align: center;
+        
+    }
+
+    .topic{
+        color: rgb(0, 0, 0);
+    }
+
+    .body{
+        background-color: #d3d3d3;
+    }
+
+    .day8{
+        background-color: #f0f0f0;
+
+    }
+
+    .day9{
+        background-color: #e0e0e0   ;
+    }
+
+    .day10{
+        background-color: aliceblue;
+    }
+
+    .day14{
+        background-color: #f7c1c1;
+
+    }
+    
+</style>
+
+
+
+<head>
+    <title>From Day 8 to Day 14</title>
+</head>
+
+
+
+
+<body>
+
+    <div id="11172019" class="daySettings, day8">
+    
+
+        <h2 class="dayDeclaration">DAY 8</h2>
+        
+        <p class="dayDeclaration">
+
+        <i>Learning never exhausts the mind. - Leonardo Da Vinci</i>
+        <br>
+        <i>Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.
+                Thomas A. Edison</i>
+        </p>
+
+        <ol>
+            <li> CSS
+                <br>
+                <br>
+                <ul>
+                    <li> <b>Instead of id and class, you can use [type = 'checkbox']</b>
+                        <br>
+                        <i>Check document comment</i>
+                        <!-- [type='checkbox']
+                            {
+                                margin: 10px 0px 15px 0px;
+                            }
+                        -->
+                    </li>
+                    <br>
+                    <li><b>Units of measurements. px, in and mm</b></li>
+                    <br>
+                    <li><b>Relative measurements: 1.5 em </b>
+                        <br>
+                        <i>1.5 Relative to the font size.</i>
+                    </li>
+                    <br>
+                    <li><b>Background-color</b></li>
+                    <br>
+                    <li><b>Classes OVERRIDE body properties.</b></li>
+                    <br>
+                    <li><b>How to add Multiple Classes.</b>
+                        <br>
+                    <i>class="class1 class2"</li>
+                    
+                    The second declaration will always take precedence over the first when in style tag.</i>
+                    <br>
+                </ul>
+            </li>
+
+            <br>
+            <li> Database
+            <br>
+            <br>
+                <ul>
+                    <li><b>Integrity Constraint - Primary and Secondary Keys</b></li>
+                    <br>
+                    <i>Makes databases meaningful.</i>
+                    <br>
+                    <i>Tuple Constraint: </i>
+                    <br>
+                    <i>Domain Constraint: Single attribute</i>
+
+                    <br>
+                    <br>
+                    <li><b>Minimal Superkey, least amount of attributes needed to identify a unique tuple</b>
+                    <br>
+                    <br>
+                    <i>
+                    Primary Key: No null values are allowed. Underlined.
+                    <br>
+                    Foreign Key: Primary key of other tables added to another table.
+                    </i>
+                    </li>
+                    <br>
+
+                    <li><b><i>Side Note:</i> created a table in postgresql.</b></li>
+                    <br>
+
+                    <li><b>Relational Algebra</b></li>
+                    <br>
+                    <i>Union</i>
+                    <br>           
+                    
+                </ul>
+            </li>
+            <br>
+            <br>
+
+            <li> <b>Data Structures</b>
+                <br>
+                <br>
+                <ul>
+                    <li>add first</li>
+                    <li>add last</li>
+                    <li>remove first</li>
+                    
+                </ul>
+            </li>
+
+            <li>Algorithms</li>
+            <ul>
+                <br>
+                <li>Sorting
+                    <br>
+                 -------------------------------------------------------------------------------------------------------
+                </li>
+                
+                <i>Insertion Sort</i>
+                <pre>
+                <code>
+                for j = 2 to n 
+                    do key = A[j]
+
+                    i = j - i
+                    while i > 0 and A[i] > key
+                        do A[i+1] = A[i]
+                        i--
+                    A[i+1] = key
+                </code>
+            </pre>
+                -------------------------------------------------------------------------------------------------------
+            <pre>
+                <code>
+                        package insertionSort;
+
+                        public class InsertionSort {
+                        
+                            
+                        
+                        
+                        
+                            public static void insertionSort(int array[]) 
+                            {  
+                                for (int j = 1; j < array.length; j++)
+                                {  
+                                    int key = array[j];  
+                                    int i = j-1;  
+                                    while ( (i > -1) && ( array [i] > key ) ) 
+                                    {  
+                                        array [i+1] = array [i];  
+                                        i--;  
+                                    }  
+                                    array[i+1] = key;  
+                                }  
+                            }  
+                               
+                            public static void main(String a[]){    
+                                int[] arr1 = {9,14,3,2,43,11,58,22};    
+                                System.out.println("Before Insertion Sort");    
+                                for(int i:arr1){    
+                                    System.out.print(i+" ");    
+                                }    
+                                System.out.println();    
+                                    
+                                insertionSort(arr1);//sorting array using insertion sort    
+                                   
+                                System.out.println("After Insertion Sort");    
+                                for(int i:arr1){    
+                                    System.out.print(i+" ");    
+                                }    
+                            }    
+                        } 
+                        
+                </code>
+            </pre>
+                <br>
+                <br>
+                <li><a href="https://youtu.be/JPyuH4qXLZ0">Current Lecture</a></li>
+                <br>
+                <br>
+                <li> Written code for insertion sort.</li>
+                <br>
+                <br>
+                
+
+        </ol>
+    </div>
+    <hr>
+
+
+
+    <div id="11182019" class="day9">
+        <h2 class="dayDeclaration">DAY 9</h2>
+        <i>
+                There are no limits. There are only plateaus. And you must not stay there. You must go beyond them.
+                Bruce Lee</i><br>
+                ------------------------------------------------------------------------------------------------------------------------------------------------------
+            <ol >
+                <li> CSS 
+                    <ul>
+
+                        <br>
+                        <li> add !important after > inline style > id > class in precedence</li>
+                        <br>
+
+                        <li>Hexadecimal Declaration #000000 black.</li>
+                        <br>
+
+                        <li>16 million color combination. REDUCE to 4000 by simply adding #_ _ _ instead of #_ _ _ _ _ _</li>
+                        <i>Instead of #F00000, use #F00 for RED</i>
+                        <br> 
+                        <br>
+
+                        <li>Another Color Scheme: rgb(0, 0, 0);</li>
+                        <i>Possible Values: 0 to 255 for red, green and blue.</i>
+                        <br>
+                        <br>
+
+                        <li>CSS variable declaration: --penguin-skin: gray;</li>
+                    </ul>
+                </li>
+                <br>
+                <br>
+
+                <li>Marcus Biel : enum</li>
+                <br>
+                <br>
+                
+    
+            </ol>
+        </div>
+
+        <hr>
+    <div id="11192019" class="day10">
+        <h2 class="dayDeclaration">DAY 10</h2>
+        <i>I hated every minute of training, but I said, "Don't quit. Suffer now and live the rest of your life as a champion."
+                Muhammad Ali</i>
+
+<br>
+                ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                <ol>
+                    <li>  CSS variable declaration continuation
+                        <ul>
+                            <br>
+                            <br>
+                            <li>    --penguin-skin: gray;<br> <i>Variable declaration</i></li>
+                            <br>
+                            <br>
+                            <li>background: var(--penguin-skin);</li>
+                            <br>
+                            <br>
+                            <li> fall back values. (used for debugging) <br> <i> background: var(--pengiun-skin, black);</i></li>
+                            <br>
+                            <br>
+                            <li>fall back for browser compatibility issues</li>
+                            <br>
+                            <br>
+                            <li>CSS inheritance; :root makes the property global!</li>
+                            <br>
+                            <br>
+                            <!-- 
+                                :root{
+                                    --penguine-belly: pink;
+                                }
+                            -->
+                            <li>changing :root to another value, internally. Class specification</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <br>
+
+                    <li>Lec 1 | MIT 6.046J / 18.410J Introduction to Algorithms (SMA 5503), Fall 2005</li>
+                    
+                    <i>Its humbling how little I know...</i>
+                    <br>
+                    <br>
+                    <li>SQL
+                        <br>
+                        <BR>
+                        <ul>
+                            <li>SELECT</li>
+                            <li>FROM</li>
+                            <li>WHERE</li>
+                            <li>LIKE </li>
+                            <li> NOT LIKE</li>
+                            <li>GROUP BY</li>
+                        </ul>
+                    </li>
+                   
+        
+                </ol>
+            </div>
+
+            <hr>
+     <div id="11202019">
+            <H2 style="text-align: center;"><b>DAY 11</b></H2>
+
+                    <ol>
+                        <li> SQL
+                            <ul>
+                                <li>SELECT salary AS remuneration FROM employee WHERE first_name = 'Birch';</li>
+                                <li>SELECT * FROM employee WHERE first_name = 'Birch';</li>
+                                <li>SELECT salary/12 AS MONTHLY_SALARY FROM employee WHERE last_name = 'Elmes';</li>
+                                <li> SELECT * FROM employee, department WHERE employee.department = department.department;</li>
+                                <li>SELECT first_name, last_name, office_city FROM employee, department WHERE employee.department = department.department;</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <br>
+                        <li>DDL
+                            <ul>
+                                <li>CREATE SCHEMA one</li>
+                                <li>CREATE TABLE myTable(element lists);</li>
+                                <li>DROP TABLE table_name</li>
+                                <li> INSERT INTO info VALUES ('Anupam Sinha', 13, 11);</li>
+                                <li> UPDATE info SET spending = spending - 5 WHERE name = 'Anupam Sinha';</li>
+
+                            </ul>
+                        </li>
+                       
+            
+                    </ol>
+                </div>
+<hr>
+     <div id="11212019" class="day8">
+            <H2 style="text-align: center;"><b>DAY 12</b></H2>
+           <p style="text-align: center;"> <em>May you live every day of your life.</em></p>
+<hr>
+                        <ol>
+                            <li> Applied Visual Design
+                                <br>
+                                <p>In web development, HTML gives structure and semantics to a page's content, and CSS controls the layout and appearance of it</p>
+                                
+                                <br>
+
+                                <ul>
+                                        <br>
+
+                                    <li>text-align: center, justify</li>
+                                    <br>
+
+                                    <li>strong to highlight certain words</li>
+                                    <br>
+
+                                    <li><u>underline tag </u></li>
+                                    <br>
+
+                                    <li><em>Emphasis added with this tag.</em></li>
+                                    <br>
+
+                                    <li><s>NOT</s> important <s>OR, IS IT?</s></li>
+                                    <br>
+
+                                </ul>
+
+                                <br>    
+                            </li>
+                            <li>ER diagrams.</li>
+                            <br>
+                          
+                
+                        </ol>
+                    </div>
+<hr>
+    <div id="11222019">
+            <H2 style="text-align: center; opacity: 0.5;"><b>DAY 13</b></H2>
+            <i>I attribute my success to this - I never gave or took any excuse.
+                    Florence Nightingale</i>
+                    <br>
+                    <i>The harder I work, the luckier I get.</i>
+                    <hr>
+                            <ol>
+                                <li> FREE CODE CAMP
+                                    <ul>
+                                        <br>
+                                        <li>    background-color: rgba(45, 45, 45, 0.1);</li>
+                                        <br>
+                                        <li>    font-size : 24px;</li>
+                                        <br>
+                                        <li>    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);</li>
+                                        <br>
+                                    </ul>
+                                </li>
+
+                                <br>
+                                <li>
+                                    <ul>
+                                        <br>
+                                        <li>variable declaration <i>var myName = 'sinha';</i></li>
+                                        <br>
+                                        <li>case sensitive variable declaration: <i>camelCase</i></li>
+                                        <br>
+                                        <li>quotient : 33 / 11 = 3</li>
+                                        <br>
+                                       
+                                    </ul>
+                                </li>
+                                <li>ER diagram</li>
+                                <li>C - variable declaration</li>
+                                <li>Algorithmb- type of functions</li>
+                    
+                            </ol>
+                        </div>
+                        <hr>
+
+    <div id="11232019" class="day14">
+            <H2 style="text-align: center; opacity: 0.3;"><b>DAY 14</b></H2>
+            
+            <i>Play is the highest form of research.
+                    Albert Einstein</i>
+                <br>
+            <i>There is only one thing that makes a dream impossible to achieve: the fear of failure.
+                </i>
+                    <hr>
+                                <ol>
+                                    <li>
+                                        <ul>
+                                            <li >Applied Visual Design
+                                                <ul>
+                                                    <br>
+                                                    <li>    text-transform: uppercase; </li>                                                        </li>
+                                                   <i style="text-transform: uppercase;">capitalized.</i>
+                                                    <br>
+                                                    <br>
+                                                    <li> font-size : 68px</li>
+                                                    <i style="font-size: 50px;">Large to emphasize its importance.</i>
+                                                    <br>
+                                                    <br>
+                                                    <li>font-weight: how thick or thin characters are.</li>
+                                                    <i style="font-weight: 800; font-size: 40px;">The best best fighter is never angry</i>
+                                                    <br>
+                                                    <li>
+                                                        <p style="line-height: 70px">You've gotta dance like there's nobody watching,
+                                                            <br>
+                                                                Love like you'll never be hurt,
+                                                                <br>
+                                                                Sing like there's nobody listening,
+                                                                <br>
+                                                                And live like it's heaven on earth.</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>JavaScript</li>
+                                    <br>
+                                    <br>
+                                    <li>ER notes</li>
+                              
+                        
+                                </ol>
+                            </div>
+
+                            <hr>
+                            <p style="text-align: center; opacity: 0.3;"><b>THE END</b></p>
+    
+</body>
+</html>
