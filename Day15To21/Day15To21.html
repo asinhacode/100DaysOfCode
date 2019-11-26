@@ -200,6 +200,131 @@
 <hr>
                 <li>Insertion Sort</li>
                 <p>Wrote the pseudocode and coded in java. Just the beginning.</p>
+                <pre>
+                    <code>
+                        package sorting;
+
+import java.util.Arrays;
+
+public class Insertion {
+
+	public static void main(String[] args) {
+		int[] mixed = {3,2,4,3,1,2,54,7,1,0,-4};
+		
+		insertion(mixed);
+		
+	}
+	
+	/**
+	 * Pseudo code:
+	 * i <- 1
+	 * while i < length(A)
+		 * 	j = i;
+		 * 	while j > 0 and A[j - 1] > A[j]
+		 * 		swap
+		 * 		j--
+	 * 		end while
+	 * 	i++
+	 * end while
+	 * @param mixed
+	 */
+	public static void insertion(int[] mixed) {
+		int i = 1;
+		
+		while(i < mixed.length) {
+			int j = i;
+			while (j > 0 && mixed[j - 1] > mixed[j]) {
+				int temp = mixed[j - 1];
+				mixed[j - 1] = mixed[j];
+				mixed[j] = temp;
+				j--;
+			}
+			i++;
+		}
+		
+		System.out.println(Arrays.toString(mixed));
+	}
+
+}
+
+                    </code>
+                </pre>
+            </ol>
+        </div>
+
+        <div>
+<hr>
+            <h2>DAY 17</h2>
+            <i>The only person you are destined to become is the person you decide to be.</i>
+            <ol>
+                <li>APPLIED VISUAL Design
+                    <ul>
+                        <li>Absolute and Relative Positions</li>
+                        <li>Fixed Position doesn't scroll</li>
+                        <li>Float: left or right</li>
+                        <li>z-index: higher integer</li>
+                        <li>margin:auto;</li> <i>Make the image centered</i>
+
+                    </ul>
+
+
+                </li>
+<br>
+                <li> Javascript
+                    <ul>
+                        <li>var myArray = ["Sinha", 28];</li>
+                        <li>var myArray = [["the universe", 42], ["everything", 101010]];</li>
+                        <li>var index = myArray[1];</li>
+                        <li>
+                            <pre>
+                                <code>
+                                        var arr = [
+                                        [1,2,3],
+                                        [4,5,6],
+                                        [7,8,9],
+                                        [[10,11,12], 13, 14]
+                                      ];
+                                      arr[3]; // equals [[10,11,12], 13, 14]
+                                      arr[3][0]; // equals [10,11,12]
+                                      arr[3][0][1]; // equals 11
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <pre>
+                                <code>
+                                    // pushes to the end
+                                        var arr = [1,2,3];
+                                        arr.push(4);
+                                        // arr is now [1,2,3,4]
+                                </code>
+                            </pre>
+                        </li>
+
+                        <li>arr.push() // adds to the end</li>
+                        <li>arr.pop() // removes from the end</li>
+                        <li>var removedFromMyArray = myArray.shift(); // removes the first element                            </li>
+                        <li>myArray.unshift(["Paul", 35]); // adds to the front</li>
+                        <li>Create functions for resuability
+                            <pre>
+                                <code>
+                                        function ourReusableFunction() {
+                                            console.log("Heyya, World");
+                                          }
+                                          
+                                          ourReusableFunction();
+
+                                          function reusableFunction(){
+                                            console.log("Hi, World");
+                                          }
+                                          
+                                          reusableFunction()
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+
+                </li>
             </ol>
         </div>
     </body>
