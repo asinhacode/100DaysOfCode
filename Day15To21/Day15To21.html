@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+    /*
+        All Days title use heading 2
+        Make them center
+    */
+    h2{
+        text-align: center;
+    }
+
+    /*
+        Seperate the goal box to make it stand out
+    */
+    .goal{
+        text-transform: uppercase;
+        border-style: dotted;
+        padding: 3%;
+
+    }
+
+    /* 
+        Individual days CSS
+    */
+    #D11242019 {
+        border-style: dashed;
+        padding: 5%;
+        margin: 5%;
+        background-color:peachpuff;
+        opacity: 0.6;
+    }
+</style>
+
+
+
+    <head>
+        <title>-Day 15 to Day 21-</title>
+    </head>
+
+
+
+
+
+    <body>
+        <div id="D11242019" >
+            <h2 >DAY 15</h2>
+            <p> <i>The secret of change is to focus all your energy not on fighting the old but on building the new.</i>
+            <br>
+        <i>Everybody has talent, but ability takes hard work.</i></p>
+            <p class="goal">Goal : Continue fCCamp, Videos on C, Write a paper of EECS 3000, Discreet Mathematics and Data Structures.</p>
+
+            <hr>
+            <ol>
+                <li>Applied Visual Design
+                    <ul>
+                        <li> line-height</li>
+
+                        <li> pseudoClass 
+                            <pre>
+                                <code>
+                                        a {
+                                            color: #000;
+                                          }
+                                        
+                                          <i>Makes it turn blue, when hovererd over </i>
+                                          a:hover{
+                                            color: #00f;
+                                          }
+                                </code>
+                            </pre>
+                        </li>
+
+                        <li>Relative Positions
+                            <p style="text-align: justify; line-height: 50px;">When the position of an element is set to relative, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page. It pairs with the CSS offset properties of left or right, and top or bottom. These say how many pixels, percentages, or ems to move the item away from where it is normally positioned. The following example moves the paragraph 10 pixels away from the bottom:</p>
+                            <pre>
+                                <code>
+                                        h2 {
+
+                                            position: relative;
+                                            top: 15px;
+                                              }
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </li>
+                <hr>
+                <li> Javascript</li>
+                <ul>
+                    <li>Concatenation</li>
+                    <li>Escape Sequence \</li>
+                    <li> +=</li>
+                
+                </ul>
+                <hr>
+
+                <li>C - neso academy
+                    <ul>
+                        <li>Signed vs Unsigned</li>
+                        <li>char data types</li>
+                        <li>sizeOf(int) // byte size</li>
+                        <li>  printf("%d", printf("%s", "Hello"));</li>
+                    </ul>
+                </li>
+                <hr>
+
+                <li>Discreet Mathematics.</li>
+            </ol>
+           
+        </div>
+
+        <div>
+            <h2>DAY 16</h2>
+            <ol>
+                <li>Javascript; .length</li>
+                <br>
+                <li>sql
+                    <ul>
+                        <li>test=# select * from w3s;
+                           </li>
+                           <li> test=# select income from w3s;
+                           </li>
+                           <li> test=# select name, income from w3s;
+                           </li>
+                           <li> test=# select name, income from w3s order by name;
+                            </li>
+                            <li>test=# select name, income from w3s order by income;
+                                </li>
+
+                                <li>test=# select id, name, income from w3s order by income;</li>
+
+                                <li>select country, name from w3s order by country;</li>
+
+                                <li>select distinct country from w3s;</li>
+
+                                <li>select count(*) from (select distinct country from w3s) as F;</li>
+
+                                <li>SELECT * FROM w3s WHERE country = 'Indonesia';</li>
+                                <hr>
+                                <li>SELECT * FROM w3s WHERE NOT country = 'Indonesia';</li>
+
+                                <li>SELECT * FROM w3s WHERE country = 'China' AND (income > spending);</li>
+
+                                <li>SELECT * FROM w3s ORDER BY income;</li>
+
+                                <li>SELECT * FROM w3s ORDER BY spending DESC;</li>
+
+                                <li>INSERT INTO w3s VALUES(51,'Anupam Sinha', '2 Armel Court', 'Toronto', 'Canada', 18.34, 8.34);</li>
+
+                                <li>SELECT * FROM w3s ORDER BY name;</li>
+
+                                <li>SELECT * FROM email WHERE email IS NOT NULL ORDER BY COUNTRY;</li>
+
+                                <li>SELECT * FROM email WHERE email IS  NULL ORDER BY COUNTRY;</li>
+
+                                <li>UPDATE email SET email = 'dPollins@gmail.com' WHERE id = 47;</li>
+
+                                <li>UPDATE w3s SET country = 'Rwanda' WHERE id = 49;</li>
+                                <hr>
+                                <li>DELETE FROM w3s WHERE id = 4;</li>
+
+                                <li>SELECT * FROM w3s LIMIT 10;</li> // FIRST 10
+
+                                <li>SELECT MIN(income) FROM w3s;</li>
+
+                                <li>SELECT MAX (income) FROM w3s;</li>
+
+                                <li>SELECT MAX(spending) AS OVERSPENDING FROM w3s;</li>
+
+                                <li>SELECT COUNT(*) FROM w3s WHERE country = 'China';</li>
+
+                                <li>SELECT AVG(income) FROM w3s</li>
+
+                                <li>SELECT SUM(spending) FROM w3s;</li>
+
+                                <li>SELECT * FROM w3s WHERE name LIKE 'A%';</li> // starts with A
+
+                                <hr>
+                                <li>SELECT * FROM w3s WHERE name LIKE '%a';</li> // ends with  a
+                                <li>SELECT * FROM w3s WHERE name LIKE '_a%';</li> // second letter
+                                <li>SELECT * FROM w3s WHERE name NOT LIKE 'A%';</li> // doesn't start with A
+                                <li>SELECT * FROM w3s WHERE name LIKE '%pam%';</li> // must have pam in the whole, doesnt matter where
+                                <li>SELECT * FROM w3s WHERE country LIKE '______';</li> // has 6 characers
+                                <li>SELECT * FROM w3s WHERE country LIKE '%a%';</li> // has an a in the word somewhere
+                                <li> SELECT * FROM w3s WHERE country = 'Poland' OR country = 'France' OR country = 'Brazil';</li>
+                                <li>SELECT * FROM w3s WHERE country IN ('Poland', 'France', 'Brazil');</li> // same as above // IN reduces OR
+                                <li>IN or NOT IN, reduces the use of multiple OR</li>
+                                <li>SELECT * FROM w3s WHERE income BETWEEN 10 AND 35;</li>
+                                inclusive
+                                <li>SELECT * FROM w3s WHERE income NOT BETWEEN 10 AND 35;</li>
+                                outside the range of 10 and 35
+                                <li>SELECT * FROM w3s WHERE name BETWEEN 'A%' AND 'G%' ORDER BY name;</li>
+
+
+
+                    </ul>
+                </li>
+<hr>
+                <li>Insertion Sort</li>
+                <p>Wrote the pseudocode and coded in java. Just the beginning.</p>
+            </ol>
+        </div>
+    </body>
+</html>
