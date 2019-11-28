@@ -31,6 +31,14 @@
         background-color:peachpuff;
         opacity: 0.6;
     }
+
+    /*
+        Table border style
+     */
+
+    table, th, td {
+    border: 1px solid black;
+}
 </style>
 
 
@@ -325,7 +333,291 @@ public class Insertion {
                     </ul>
 
                 </li>
+<br>
+                <li>LINKED LIST
+                    <ul>
+                        <li><pre>
+                            <code>
+                                    /**
+                                    * 	addFirst(data)
+                                    * ----------------
+                                    * 	newest = Node(data)
+                                    * 	newest.next = head
+                                    * 	head = newest
+                                    * 	size++
+                                    * 
+                                    * 
+                                    * addLast(data)
+                                    * -----------------
+                                    * 	newest = Node(data)
+                                    * 	newest.next = null;
+                                    * 	tail.next = newest;
+                                    * 	tail = newest
+                                    * 	size++
+                                    * 
+                                    * 
+                                    * removeFirst()
+                                    * ------------------
+                                    * 	if head == null
+                                    * 		empty list
+                                    * 
+                                    * 	head = head.next
+                                    * 	size--;
+                                    */
+                                   package linkedList;
+                                   
+                                   public class SinglyLinkedList<E> {
+                                   
+                                       // private node class
+                                       private static class Node<E>{
+                                           private E element;
+                                           private Node<E> next;
+                                           
+                                           public Node(E e, Node<E> n) {
+                                               element = e;
+                                               next = n;
+                                           }
+                                           
+                                           public E getElement() {
+                                               return element;
+                                           }
+                                           
+                                           public Node<E> getNext(){
+                                               return next;
+                                           }
+                                           
+                                           public void setNext(Node<E> n) {
+                                               next = n;
+                                           }
+                                       } // end of private class
+                                       
+                                       
+                                       private Node<E> head = null;
+                                       private Node<E> tail = null;
+                                       
+                                       private int size = 0;
+                                       
+                                       // constructors
+                                       public SinglyLinkedList() {
+                                           
+                                       }
+                                       
+                                       public int size() {
+                                           return size;
+                                           
+                                       }
+                                       
+                                       public boolean isEmpty() {
+                                           return size == 0;
+                                       }
+                                       
+                                       // accessor methods
+                                       public E first() {
+                                           if(isEmpty()) return null;
+                                           
+                                           return head.getElement();
+                                       }
+                                       
+                                       public E last() {
+                                           if(isEmpty()) return null;
+                                   
+                                           return tail.getElement();
+                                       }
+                                       
+                                       // update methods
+                                       public void addFirst(E e) {
+                                           head = new Node<>(e, head);
+                                           
+                                           if(size == 0)
+                                               tail = head;
+                                           size++;
+                                       }
+                                       
+                                       public void addLast(E e) {
+                                           Node<E> newest = new Node<>(e,null);
+                                   
+                                           if(isEmpty())
+                                               head = newest;
+                                           
+                                           else
+                                               tail.setNext(newest);
+                                           tail = newest;
+                                           size++;
+                                       }
+                                       
+                                       public E removeFirst() {
+                                           if(isEmpty()) // empty list
+                                               return null;
+                                           
+                                           E answer = head.getElement();
+                                           head = head.getNext(); // move head to next element
+                                           size--;
+                                           
+                                           if(size == 0) // if there was only 1 element
+                                               tail = null;
+                                           return answer;
+                                           
+                                       }
+                                       
+                                       
+                                   }
+   
+                            </code>
+                        </pre></li>
+                    </ul>
+                </li>
+
+                <li>Propositional Logic
+                    <ul>
+                        <li>Definition</li>
+                        <li>Negation: opposite</li>
+                        <li>Conjunction: and</li>
+                        <li>Disjunction: or</li>
+                        <li>Exclusive Or: xor</li>
+                        <li>Implication: if p the q, nobody cares when not p</li>
+                        <li>Biconditional: iff p then q</li>
+                        <li>Converse: switch</li> 
+                        <li>Inverse: negate</li>
+                        <li>Contrapositive: switch and negate</li>
+                    </ul>
+                </li>
             </ol>
+        </div>
+
+        <div>
+            <h2>DAY 18</h2>
+            <br>
+            <i>Whatever you are, be a good one</i>
+            <br>
+            <i>All things are difficult before they are easy</i>
+            <br>
+            <i>The past cannot be changed. The future is yet in your power</i>
+            <hr>
+
+            <OL>
+                <li>Java: STARTED CODING ON A PASSWORD GENERATOR.</li>
+                <br>
+                    <br>
+                <li>Javascript
+                    <br>
+                    <br>
+                    <UL>
+                        <li> Function declaration
+                            <pre>
+                            <code>
+                                function testFun(param1, param2) {
+                                    console.log(param1, param2);
+                                  }
+                            </code>
+                        </pre></li>
+
+                        <li> Local and global variable: local has HIGHER PRECEDENCE than global
+                            <pre>
+                                <code>
+                                        // Setup
+                                        var outerWear = "T-Shirt"; // global
+                                        
+                                        function myOutfit() {
+                                          // Only change code below this line
+                                        
+                                          var outerWear = "sweater"; // local
+                                        
+                                          // Only change code above this line
+                                          return outerWear; // returns sweater - local takes precedence over global
+                                        }
+                                        
+                                        myOutfit();
+                                        
+                                </code>
+                            </pre>
+                        </li>
+
+                        <li>
+                            returning a value.
+                            <pre>
+                                <code>
+                                        function plusThree(num) {
+                                            return num + 3;
+                                          }
+                                          var answer = plusThree(5); // 8
+                                </code>
+                            </pre>
+
+                        </li>
+                    </UL>
+                </li>
+
+                <LI>
+                    APPLIED VISUAL DESIGN
+                    <ul>
+                        <li> Coloring Scheme
+                            <br>
+                            -Primary Color: Red, Green and blue
+                            <br>
+
+                            -Secondary Color: Mixture of promary Color
+                            <br>
+
+                            -Tertiary Color: Primary + Secondary
+                        </li>
+
+                        <li>
+                            Dominant Color : #09A7A1 (teal)<br>
+                            Complementary Color: (#FF790E) (orange)
+                        </li>
+                    </ul>
+                </LI>
+
+                <li>Discreet Mathematics
+                    <ul>
+                        <li>Predicate Logic</li>
+                        <li>Quantifiers</li>
+                        <li>For all : A</li>
+                        <li>There exists : E</li>
+                    </ul>
+                </li>
+
+            </OL>
+        </div>
+<hr>
+        <div>
+            <h2>Day 19</h2>
+            <table style="width:100%"></table>
+            
+            <!-- Tabulated Column -->
+            <tr>
+                <th>1. Javascript</th>
+            </tr>
+
+            <tr>
+                <td>
+                <pre>
+                    <code>
+                        function nextInLine(arr, item) {
+                            // Your code here
+                            arr.push(item) // add item to the end
+                            let first = arr.shift(); // remove the first item
+                            return first;  // return first element
+                          }
+                          
+                          // Test Setup
+                          var testArr = [1,2,3,4,5];
+                          
+                          // Display Code
+                          console.log("Before: " + JSON.stringify(testArr));
+                          console.log(nextInLine(testArr, 6)); // Modify this line to test
+                          console.log("After: " + JSON.stringify(testArr));
+                          
+                          
+                    </code>
+                </pre>
+            </td>
+            </tr>
+
+            <tr>
+                
+            </tr>
+
         </div>
     </body>
 </html>
