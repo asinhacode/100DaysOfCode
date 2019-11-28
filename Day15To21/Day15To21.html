@@ -582,17 +582,27 @@ public class Insertion {
 <hr>
         <div>
             <h2>Day 19</h2>
-            <table style="width:100%"></table>
+            <i>Arise, Awake and Stop not until the goal is reached.</i>
+            <br>
+            <i>Courage isn't having the strength to go on – it is going on when you don't have strength.</i>
+            <table style="width:100%">
             
             <!-- Tabulated Column -->
             <tr>
-                <th>1. Javascript</th>
+                <th>1. Javascript</th>     
+                <th>2. Applied Visual Design</th>  
+                       
             </tr>
 
+            <!-- Under Javascript-->
             <tr>
                 <td>
+                   
                 <pre>
                     <code>
+                            array :
+
+
                         function nextInLine(arr, item) {
                             // Your code here
                             arr.push(item) // add item to the end
@@ -612,12 +622,93 @@ public class Insertion {
                     </code>
                 </pre>
             </td>
+
+            <td>
+                hsl() : hue , saturation and lightness
+                <br>
+                hue : color - 0 to 360 degree
+                <br>
+
+                saturation : amount of gray - 100% full
+                <br>
+
+                lightness : amount of white - (100%) or black(0%)
+
+                <pre>
+                    <code>
+                        Color	HSL
+                        red	hsl(0, 100%, 50%)
+                        yellow	hsl(60, 100%, 50%)
+                        green	hsl(120, 100%, 50%)
+                        cyan	hsl(180, 100%, 50%)
+                        blue	hsl(240, 100%, 50%)
+                        magenta	hsl(300, 100%, 50%)
+                    </code>
+                </pre>
+            </td>
             </tr>
 
             <tr>
-                
+                <td>
+                boolean : true or false
+                <pre>
+                    <code>
+                            if (condition is true) {
+                                statement is executed
+                              }
+                    </code>
+                </pre>
+<hr>
+                <pre>
+                    <code>
+                            function test (myCondition) {
+                                if (myCondition) {
+                                   return "It was true";
+                                }
+                                return "It was false";
+                              }
+                              test(true);  // returns "It was true"
+                              test(false); // returns "It was false"
+                    </code>
+                </pre>
+            </td>
             </tr>
 
+            <tr>
+                <td>
+                    <pre>
+                        <code>
+                            Strictly equal: 1 === '1' ; false as one is int and the other is a stringif
+                                            <br>
+                                            1 == '1' returns true becauses of type coersion
+                                            <br>
+
+                                            // Setup
+                                            function testStrict(val) {
+                                            if (val === 7) { // Change this line
+                                                return "Equal";
+                                            }
+                                            return "Not Equal";
+                                            }
+
+                                            // Change this value to test
+                                            testStrict(7);
+                        </code>
+                    </pre>
+                </td>
+            </tr>
+<hr>
+            <tr>
+                <td>
+                    == : equal
+                    <br>
+                    === : strictly equal
+                    <br>
+                    != : not equal
+                </td>
+            </tr>
+
+        </table>
         </div>
     </body>
 </html>
