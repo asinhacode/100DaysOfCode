@@ -6,7 +6,7 @@
         <style>
             
             table, th, td {
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
         h1{
@@ -14,6 +14,8 @@
             background-color: #fd0;
             padding: 1.5em;
             margin: -20px;
+            text-align: center;
+
         }
 
         body {
@@ -21,15 +23,21 @@
             }
 
         th:hover{
-            transform: scale(2.5);
+            transform: scale(1.5);
+            background-color:burlywood;
         }
 
-        .quotes{
+        h2{
+            text-align: center;
+        }
+
+        .quotesToGo{
+            transform: skewX(15deg), skewY(-10deg);
+            text-align: center;
             
         }
-        .quotes:hover{
-            transform: scale(1.5);
-        }
+
+       
         </style>
     </head>
 
@@ -37,8 +45,9 @@
         <H1> DAY 21 TO 25 </H1>
         <HR>
 
-        <p class="quotes">
-            <h2>    QUOTES to ENCOURAGE</h2>
+        <div class="quotesToGo">
+                <h2>    QUOTES to ENCOURAGE</h2>
+
             <I> Don't waste your time chasing butterflies. Mend your garden, and the butterflies will come.</I>
             <br>
             <i>A winner is a dreamer who never gives up</i>
@@ -50,7 +59,10 @@
 
             <br>
             <i>We have two lives, and the second begins when we realize we only have one.</i>
-        </p>
+
+            <br>
+            <i>You were born with wings, why prefer to crawl through life?</i>
+        </div>
 
         <HR>
         <!-- Next 5 days tabulate all your research -->
@@ -532,11 +544,200 @@
             <!-- DAY 23 -->
             <tr>
                     <td></td>
+                    <td><pre>
+                        <code>
+                                                var count = 0;
+
+                    function cc(card) {
+                    // Only change code below this line
+                    switch(card)
+                    {
+                        case 2: case 3: case 4: case 5: case 6:
+                        count++;
+                        break;
+
+                        case 10: case "J": case "Q": case "K": case "A":
+                        count--;
+                        break;
+                    }
+
+                    var result;
+                    if(count > 0)
+                    result = count + " Bet";
+
+                    else
+                    result = count + " Hold";
+
+                    return result;
+                    // Only change code above this line
+                    }
+
+                    // Add/remove calls to test your function.
+                    // Note: Only the last will display
+                    cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+                        </code>
+                    </pre>
+
+                    <hr>
+                    <i>OBJECTS creation</i>
+                    <pre>
+                        <code>
+                            var myDog = {
+                                "name": "Bruno",
+                                "legs" : 4,
+                                "tails": 1,
+                                "friends": ["humans", "aliens"]
+                                };
+                        </code>
+                    </pre>
+
+                    <hr>
+                    <i>Accessing Properties</i>
+                    <br>
+                    <i>DOT NOTATION</i>
+                    <pre>
+                        <code>
+                            var myObj = {
+                                prop1: "val1",
+                                prop2: "val2"
+                              };
+                              var prop1val = myObj.prop1; // val1
+                              var prop2val = myObj.prop2; // val2
+                        </code>
+                    </pre>
+
+                    <pre>
+                        <code>
+                                                        // Setup
+                            var testObj = {
+                            "hat": "ballcap",
+                            "shirt": "jersey",
+                            "shoes": "cleats"
+                            };
+
+                            // Only change code below this line
+
+                            var hatValue = testObj.hat;      // Change this line
+                            var shirtValue = testObj.shirt;    // Change this line
+                        </code>
+                    </pre>
+
+                    <HR>
+                        <BR>
+                            <i>BRACKET NOTATION</i>
+                            <PRE>
+                                <CODE>
+                            var myObj = {
+                                "Space Name": "Kirk",
+                                "More Space": "Spock",
+                                "NoSpace": "USS Enterprise"
+                              };
+                              myObj["Space Name"]; // Kirk
+                              myObj['More Space']; // Spock
+                              myObj["NoSpace"];    // USS Enterprise
+                            </CODE>
+                            </PRE>
+
+                            <hr>
+                            <pre>
+                                <code>
+                                        // Setup
+                                        var testObj = {
+                                          "an entree": "hamburger",
+                                          "my side": "veggies",
+                                          "the drink": "water"
+                                        };
+                                        
+                                        // Only change code below this line
+                                        
+                                        var entreeValue = testObj["an entree"];   // Change this line
+                                        var drinkValue = testObj["the drink"];    // Change this line
+                                        
+                                </code>
+                            </pre>
+                </td>
+
+
                     <td></td>
+                    <td>
+                        <i>Skewing an element</i>
+                        <pre>
+                            <code>  
+                                transform: skewX(32deg);
+                                transform: skewY(-10deg);
+
+                                </code>
+                        </pre>
+
+                        <hr>
+                        <p>INTERESTING SHAPES - the moon crescent</p>
+                        <pre>
+                            <code>
+                                   
+                                            .center {
+                                              position: absolute;
+                                              margin: auto;
+                                              top: 0;
+                                              right: 0;
+                                              bottom: 0;
+                                              left: 0;
+                                              width: 100px;
+                                              height: 100px;
+                                              background-color: transparent;
+                                              border-radius: 50%;
+                                              box-shadow: 25px 10px 0px 0px blue;
+                                            }
+                                          
+                                          
+                                          
+                                          
+                            </code>
+                        </pre>
+                    </td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <i>C programming</i>
+                        <pre>
+                            <code>
+                                    //
+                                    //  main.c
+                                    //  C_language
+                                    //
+                                    //  Created by Anupam Sinha on 2019-11-22.
+                                    //  Copyright © 2019 Anupam Sinha. All rights reserved.
+                                    //
+                                    
+                                    #include <stdio.h>
+                                    
+                                    int main(int argc, const char * argv[])
+                                    {
+                                        /*
+                                         day between 0 to 6
+                                         
+                                         0 : Sunday
+                                         6 : Saturday
+                                         */
+                                        printf(" : %d\n", printf("%s","Hello World"));
+                                        printf("%10s\n", "_____Hello");
+                                        
+                                        char c = 255;
+                                        printf("%d\n", c);
+                                        
+                                        c += 10;
+                                        printf("%d\n", c);
+                                        
+                                        unsigned i = 1;
+                                        int j = -4;
+                                        printf("%u\n", i + j);
+                                    
+                                               
+                                        
+                                    }
+                                    
+                            </code>
+                        </pre>
+                    </td>
                     <td></td>
                     <td></td>
 
