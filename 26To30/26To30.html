@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+.CONTENTS{
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 5px 10px #888888;
+    border-color: black;
+    border-style: solid;    
+}
+
+.CONTENTS:hover{
+    background-color: deepskyblue;
+}
+
+H1{
+    text-align: center;
+    color:  #f00;
+}
+
+H2{
+    text-align: center;
+}
+
+
+.quotes{
+    box-shadow: 5px 10px #888888;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+
+}
+
+.quotes:hover{
+    background-color: cornflowerblue;
+}
+
+.freecodecamp{
+    box-shadow: 5px 10px #888888;
+
+}
+
+th:hover{
+    background-color: coral;
+}
+
+table{
+    border-color: black;
+    border-style: solid;
+    box-shadow: 5px 10px #888888;
+
+}
+
+</style>
+
+
+<head>
+    <title>Day 26 to 30</title>
+</head>
+
+
+<body>
+
+    <H1>Day 26 to 30</H1>
+<br>
+<br>
+    <div class="quotes">
+        <h2>QUOTES</h2>
+        <HR>
+        <p>
+            - Perseverance is failing 19 times and succeeding the 20th.
+            <br>
+            - Today's accomplishments were yesterday's impossibilities.
+
+
+        </p>
+
+    </div>
+
+<br>
+<br>
+    <div class="CONTENTS">
+        <hr>
+    <ol>
+        <li>DISCREET MATHEMATICS</li>
+        <li>JAVA</li>
+        <li>DATA STRUCTURES AND ALGORITHMS</li>
+        <li>C</li>
+        <li>FREECODECAMP</li>
+
+    </ol>
+    <hr>
+    </div>
+
+ <div>
+        <br>
+        <br>
+    <div>
+
+        <table>
+            <th>DISCREET MATHEMATICS</th>
+            <tr></tr>
+        </table>
+    </div>
+    <hr>
+    <br>
+<br>
+    <div>
+
+            <table>
+                <th>JAVA</th>
+                <tr></tr>
+            </table>
+        </div>
+        <hr>
+        <br>
+<br>
+        <div>
+
+                <table>
+                    <th>DATASTRUCTURE AND ALGORITHMS</th>
+                    <tr></tr>
+                </table>
+            </div>
+            <hr>
+            <br>
+<br>
+            <div>
+
+                    <table>
+                        <th>C</th>
+                        <tr></tr>
+                    </table>
+                </div>
+                <hr>
+                <br>
+<br>
+                <div class="freecodecamp">
+
+                        <table>
+                            <th>FREECODECAMP</th>
+
+                            <tr> <td>- combinations of strings, numbers, booleans, arrays, functions, and objects can be placed in a class</td></tr>
+                            <tr>
+                                <td>
+                                <pre>
+                                    <code>
+                                            var myMusic = 
+                                                        [
+                                                        {
+                                                            "artist": "Billy Joel",
+                                                            "title": "Piano Man",
+                                                            "release_year": 1973,
+                                                            "formats": [
+                                                            "CD",
+                                                            "8T",
+                                                            "LP"
+                                                            ],
+                                                            "gold": true
+                                                        },
+                                                        // Add record here
+                                                        {
+                                                            "artist":"anupam",
+                                                            "title":"the lost and found",
+                                                            "release_year":2020,
+                                                            "formats":["SOFTWARE", "SPOTIFY"]
+                                                        }
+                                                        ];
+
+
+                                    </code>
+                                </pre>
+                            </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                Complex Objects:
+                                <br>
+                                <pre>
+                                    <code>
+                                            var ourStorage = {
+                                                "desk": {
+                                                  "drawer": "stapler"
+                                                },
+                                                "cabinet": {
+                                                  "top drawer": { 
+                                                    "folder1": "a file",
+                                                    "folder2": "secrets"
+                                                  },
+                                                  "bottom drawer": "soda"
+                                                }
+                                              };
+                                              ourStorage.cabinet["top drawer"].folder2;  // "secrets"
+                                              ourStorage.desk.drawer; // "stapler"
+                                    </code>
+                                </pre>
+                            </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                Accessing complex array data
+                                <pre>
+                                    <code>
+                                            var ourPets = [
+                                            {
+                                              animalType: "cat",
+                                              names: [
+                                                "Meowzer",
+                                                "Fluffy",
+                                                "Kit-Cat"
+                                              ]
+                                            },
+                                            {
+                                              animalType: "dog",
+                                              names: [
+                                                "Spot",
+                                                "Bowser",
+                                                "Frankie"
+                                              ]
+                                            }
+                                          ];
+                                          ourPets[0].names[1]; // "Fluffy"
+                                          ourPets[1].names[0]; // "Spot"
+                                    </code>
+                                </pre>
+
+                            </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Array access example
+                                    <pre>
+                                        <code>
+                                                // Setup
+                                                var myPlants = [
+                                                  {
+                                                    type: "flowers",
+                                                    list: [
+                                                      "rose",
+                                                      "tulip",
+                                                      "dandelion"
+                                                    ]
+                                                  },
+                                                  {
+                                                    type: "trees",
+                                                    list: [
+                                                      "fir",
+                                                      "pine",
+                                                      "birch"
+                                                    ]
+                                                  }
+                                                ];
+                                                
+                                                // Only change code below this line
+                                                
+                                                var secondTree = myPlants[1].list[1]; // Change this line
+                                                
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <hr>
+</div>
+</body>
+
+</html>
