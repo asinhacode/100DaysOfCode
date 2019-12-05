@@ -29,6 +29,7 @@
 
         h2{
             text-align: center;
+
         }
 
         .quotesToGo{
@@ -46,7 +47,7 @@
         <HR>
 
         <div class="quotesToGo">
-                <h2>    QUOTES to ENCOURAGE</h2>
+                <h2> <u>  QUOTES to ENCOURAGE </u> </h2>
 
             <I> Don't waste your time chasing butterflies. Mend your garden, and the butterflies will come.</I>
             <br>
@@ -65,6 +66,9 @@
 
             <br>
             <i>Be happy, but never satisfied.</i>
+
+            <br>
+            <i>Do not pray for an easy life. Pray for the strength to endure a difficult one.</i>
         </div>
 
         <HR>
@@ -821,9 +825,133 @@
             <!-- DAY 25 -->
             <tr>
                     <td></td>
+                    <td>Adding another property:
+                        <pre>
+                            <code>
+                                var myDog = {
+                                    "name": "Happy Coder",
+                                    "legs": 4,
+                                    "tails": 1,
+                                    "friends": ["freeCodeCamp Campers"]
+                                  };
+                            </code>
+
+                            <code>
+                                myDog["bark"] = "woof"; // add another property
+                            </code>
+<hr>
+                            <code>
+                                delete ourDog.bark; // delete a property
+                            </code>
+<hr>
+                            Deleting a property.
+                            <code>
+                                // Example
+                            var ourDog = {
+                            "name": "Camper",
+                            "legs": 4,
+                            "tails": 1,
+                            "friends": ["everything!"],
+                            "bark": "bow-wow"
+                            };
+
+                            delete ourDog.bark;
+
+                            // Setup
+                            var myDog = {
+                            "name": "Happy Coder",
+                            "legs": 4,
+                            "tails": 1,
+                            "friends": ["freeCodeCamp Campers"],
+                            "bark": "woof"
+                            };
+
+                            // Only change code below this line.
+                            delete myDog["tails"];
+                            </code>
+
+                            <hr>
+                            // converting switch to a class object
+                            // Setup
+                                function phoneticLookup(val) {
+                                var result = "";
+
+                                // Only change code below this line
+                                var lookup = {
+                                "alpha":"Adams",
+                                "bravo":"Boston",
+                                "charlie":"Chicago",
+                                "delta":"Denver",
+                                "echo":"Easy",
+                                "foxtrot":"Frank"
+
+                                };
+                                result = lookup[val];
+
+                                // Only change code above this line
+                                return result;
+                                }
+
+                                // Change this value to test
+                                phoneticLookup("charlie");
+
+                                <hr>
+                                // test to see whether a property exists
+                                var myObj = {
+                                    top: "hat",
+                                    bottom: "pants"
+                                  };
+                                  myObj.hasOwnProperty("top");    // true
+                                  myObj.hasOwnProperty("middle"); // false
+
+                                  <hr>
+                                  // Setup
+                                    var myObj = {
+                                    gift: "pony",
+                                    pet: "kitten",
+                                    bed: "sleigh"
+                                    };
+
+                                    function checkObj(checkProp) {
+                                    // Your Code Here
+                                    if(myObj.hasOwnProperty(checkProp))
+                                        return myObj[checkProp];
+
+                                        return "Not Found"
+                                    }
+
+                                    // Test your code by modifying these values
+                                    checkObj("gift");
+
+
+                        </pre>
+                    </td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <pre>
+                            <code>
+                                p {
+                                    text-align:justify; // left to right apart from last line.
+                                  }
+                            </code>
+
+                            <code>
+                                The box-shadow property applies one or more shadows to an element.
+
+                                The box-shadow property takes values for
+
+                                offset-x (how far to push the shadow horizontally from the element),
+                                offset-y (how far to push the shadow vertically from the element),
+                                blur-radius,
+                                spread-radius and
+                                color, in that order.
+                                The blur-radius and spread-radius values are optional.
+
+                                <br>
+                                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                            </code>
+                        </pre>
+                    </td>
                     <td></td>
                     <td></td>
                     <td></td>
