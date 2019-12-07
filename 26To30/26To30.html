@@ -3,6 +3,9 @@
 
 <style>
 
+/*
+    Modifying the THINGS to focus on
+*/
 .CONTENTS{
     text-align: center;
     font-size: 35px;
@@ -11,10 +14,18 @@
     border-style: solid;    
 }
 
+/*
+    Hover the contents when hovered on
+*/
 .CONTENTS:hover{
-    background-color: deepskyblue;
+    hsl(180. 100%, 50%);
+    opacity: 0.5;
+
 }
 
+/*
+    Days
+*/
 H1{
     text-align: center;
     color:  #f00;
@@ -24,7 +35,7 @@ H2{
     text-align: center;
 }
 
-
+/* Quotes style*/
 .quotes{
     box-shadow: 5px 10px #888888;
     border-color: black;
@@ -33,24 +44,41 @@ H2{
 
 }
 
+/* Hovered on when over*/
+
 .quotes:hover{
-    background-color: cornflowerblue;
+    background-color: deepskyblue;
+    transform:scale(1.5);
+
+
 }
+
+/* Everything I learn at freecodecamp*/
 
 .freecodecamp{
     box-shadow: 5px 10px #888888;
 
 }
 
+/* hover when the table header is hovered*/
+
 th:hover{
     background-color: coral;
+    transform:skewY(-10deg);
 }
+
+/* Table data modified*/
 
 table{
     border-color: black;
     border-style: solid;
     box-shadow: 5px 10px #888888;
 
+}
+
+/* java table*/
+.java:hover{
+    background-color: cornflowerblue;
 }
 
 </style>
@@ -73,6 +101,10 @@ table{
             - Perseverance is failing 19 times and succeeding the 20th.
             <br>
             - Today's accomplishments were yesterday's impossibilities.
+            <br>
+            - There is only one thing that makes a dream impossible to achieve: the fear of failure.
+            <br>
+            - Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.
 
 
         </p>
@@ -109,9 +141,123 @@ table{
 <br>
     <div>
 
-            <table>
+            <table class="java">
                 <th>JAVA</th>
-                <tr></tr>
+                <tr>
+                    <td>
+                        <pre>
+                            <code>
+                                    public boolean cigarParty(int cigars, boolean isWeekend) {
+  
+                                        if(isWeekend)
+                                          return cigars > 39;
+                                          
+                                        else
+                                          return cigars > 39 && cigars < 61;
+                                      }
+                                      
+                                      public int dateFashion(int you, int date) {
+                                        
+                                        if(you < 3 || date < 3){
+                                          return 0;
+                                        }
+                                        
+                                        else if(you > 7 || date > 7)
+                                          return 2;
+                                        
+                                        else
+                                        return 1;
+                                      }
+                                      
+                                      public boolean squirrelPlay(int temp, boolean isSummer) {
+                                        
+                                        if(isSummer)
+                                        return temp > 59 && temp < 101;
+                                        
+                                        return temp > 59 && temp < 91;
+                                      
+                                        
+                                      }
+                                      
+                                      public int caughtSpeeding(int speed, boolean isBirthday) {
+                                        
+                                        int five = 0;
+                                        
+                                        if(isBirthday)
+                                        {
+                                          five = 5;
+                                        }
+                                        
+                                        if(speed < (61 + five))
+                                          return 0;
+                                          
+                                        else if(speed < (81 + five))
+                                          return 1;
+                                          
+                                        else
+                                          return 2;
+                                      }
+                                      
+                                      public int sortaSum(int a, int b) {
+                                        int sum = a + b;
+                                        
+                                        if(sum > 9 && sum < 21)
+                                        return 20;
+                                        
+                                        else
+                                        return sum;
+                                      }
+                                      
+                            </code>
+                        </pre>
+                    </td>
+                </tr>
+
+                <br>
+                <tr>
+                    <td>
+                    <pre>
+                        <code>
+                                public String alarmClock(int day, boolean vacation) {
+  
+                                    if(vacation)
+                                    {
+                                      if(day == 6 || day == 0)
+                                      return "off";
+                                      
+                                      else
+                                      return "10:00";
+                                    }
+                                    
+                                    else
+                                    {
+                                      if(day == 6 || day == 0)
+                                      return "10:00";
+                                      
+                                      else
+                                      return "7:00";
+                                    }
+                                  }
+
+                                  
+                        </code>
+                    </pre>
+                </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <pre>
+                        <code>
+                                public boolean love6(int a, int b) {
+  
+                                    return (a == 6 || b == 6 || a + b == 6 || (Math.abs(a - b) == 6));
+                                    
+                                  }
+                        </code>
+                    </pre>
+                </td>
+                </tr>
             </table>
         </div>
         <hr>
@@ -131,7 +277,28 @@ table{
 
                     <table>
                         <th>C</th>
-                        <tr></tr>
+                        <tr>
+                            <td>
+                                <pre>
+                                    <code>
+
+                                            static int count = 0; // not visible outside this file.
+
+                                            int increment(){
+                                                return ++count;
+                                            }
+
+                                            int increment2(int data){
+                                                return ++data;
+                                            }
+                                    </code>
+<hr>
+                                    <code>
+                                        051 = (8 * 5) + (1) = 41
+                                    </code>
+                                </pre>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <hr>
@@ -142,6 +309,29 @@ table{
                         <table>
                             <th>FREECODECAMP</th>
 
+                            <tr> 
+                                <td>
+                                        loops:
+                                                <pre>
+                                                    <code>
+                                                            var ourArray = [];
+                                                            var i = 0;
+                                                            while(i < 5) {
+                                                              ourArray.push(i);
+                                                              i++;
+                                                            }
+                                                    </code>
+                
+                                                    <code>
+                                                            var ourArray = [];
+                                                            for (var i = 0; i < 5; i++) {
+                                                              ourArray.push(i);
+                                                            }
+                                                    </code>
+                                                </pre>
+                                            
+                                </td>
+                            </tr>
                             <tr> <td>- combinations of strings, numbers, booleans, arrays, functions, and objects can be placed in a class</td></tr>
                             <tr>
                                 <td>
@@ -266,6 +456,8 @@ table{
                                     </pre>
                                 </td>
                             </tr>
+
+                           
                         </table>
                     </div>
                     <hr>
