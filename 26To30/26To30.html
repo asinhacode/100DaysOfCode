@@ -3,6 +3,39 @@
 
 <style>
 
+                                                    .heart {
+                                                      position: absolute;
+                                                      margin: auto;
+                                                      top: 0;
+                                                      right: 0;
+                                                      bottom: 0;
+                                                      left: 0;
+                                                      background-color: pink;
+                                                      height: 50px;
+                                                      width: 50px;
+                                                      transform: rotate(-45deg);
+                                                    }
+                                                    .heart::after {
+                                                      background-color: pink;
+                                                      content: "";
+                                                      border-radius: 50%;
+                                                      position: absolute;
+                                                      width: 50px;
+                                                      height: 50px;
+                                                      top: 0px;
+                                                      left: 25px;
+                                                    }
+                                                    .heart::before {
+                                                      content: "";
+                                                      background-color: pink;
+                                                      border-radius: 50%;
+                                                      position: absolute;
+                                                      width: 50px;
+                                                      height: 50px;
+                                                      top: -25px;
+                                                      left: 0px;
+                                                    }
+                                                
 /*
     Modifying the THINGS to focus on
 */
@@ -104,7 +137,8 @@ table{
             - There is only one thing that makes a dream impossible to achieve: the fear of failure.
             <br>
             - Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.
-
+            <br>
+            - Start where you are. Use what you have. Do what you can.
 
         </p>
 
@@ -419,6 +453,9 @@ table{
                 <hr>
                 <br>
 <br>
+
+<!-- FREE CODE CAMP-->
+
                 <div class="freecodecamp">
 
                         <table>
@@ -572,6 +609,84 @@ table{
                                 </td>
                             </tr>
 
+                            <tr>
+                                <td>
+                                    Applied Visual Design:
+
+                                    <pre>
+                                        <code>
+                                            <i> A square with a shadow</i>
+                                            .center {
+                                                position: absolute;
+                                                margin: auto;
+                                                top: 0;
+                                                right: 0;
+                                                bottom: 0;
+                                                left: 0;
+                                                width: 100px;
+                                                height: 100px;
+                                                background-color: blue;
+                                                border-radius: 0px;
+                                                box-shadow: 25px 10px 10px 10px green;
+                                              }
+                                        </code>
+                                        <hr>
+                                        <code>
+                                            <i>Change the shape into a circle by changing the border radius</i>
+                                            .center {
+                                             
+                                                border-radius: 50%; <!-- CHanged from 0 -->
+                                               
+                                              }
+                                        </code>
+
+                                        <code>
+                                            <i>Make the first object transparent</i>
+                                            background-color: transparent; <!-- Change from blue-->
+                                        </code>
+
+                                        <code>
+                                                box-shadow: 25px 10px 0px 0px blue;
+                                        </code>
+
+                                        <code>
+                                            <I> Nested loops</I>
+                                                var arr = [
+                                                [1,2], [3,4], [5,6]
+                                              ];
+                                              for (var i=0; i < arr.length; i++) {
+                                                for (var j=0; j < arr[i].length; j++) {
+                                                  console.log(arr[i][j]);
+                                                }
+                                              }
+                                                  
+                                        </code>
+
+                                        <code>
+                                            <i>Product of each element in the array</i>
+                                            function multiplyAll(arr) {
+                                                var product = 1;
+                                                // Only change code below this line
+                                              
+                                                for(var i = 0; i < arr.length; i++)
+                                                {
+                                                  for(var j = 0; j < arr[i].length; j++)
+                                                  {
+                                                    product *= arr[i][j];
+                                                    console.log(product);
+                                                  }
+                                                }
+                                                // Only change code above this line
+                                                return product;
+                                              }
+                                              
+                                              // Modify values below to test your code
+                                              multiplyAll([[1,2],[3,4],[5,6,7]]);
+                                              
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
                            
                         </table>
                     </div>
