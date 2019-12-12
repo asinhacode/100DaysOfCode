@@ -36,6 +36,7 @@
 <body>
 
     <div class="quotes">
+        <h1>Quotes</h1>
         <ol>
             <li>What you do speaks so loudly that I cannot hear what you say.</li>
             <li>Watch your thoughts, for they become words. Watch your words, for they become actions. Watch your actions, for they become habits. Watch your habits, for they become character. Watch your character, for it becomes your destiny</li>
@@ -129,6 +130,73 @@
                                       return 1;
                                   
                                   }
+                        </code>
+
+                        <code>
+                                public String fizzString(String str) {
+  
+                                    if(str.startsWith("f"))
+                                    {
+                                      if(str.endsWith("b"))
+                                      {
+                                          return "FizzBuzz";
+                                      }
+                                      
+                                        return "Fizz";
+                                    }
+                                    
+                                    else if(str.endsWith("b")){
+                                              return "Buzz";
+                                  
+                                    }
+                                    return str;
+                                  }
+                                  
+                        </code>
+
+                        <code>
+                                public String fizzString2(int n) {
+   
+                                    if(n%3 == 0)
+                                    {
+                                      if(n%5 == 0)
+                                      {
+                                          return "FizzBuzz!";
+                                  
+                                      }
+                                      
+                                        return "Fizz!";
+                                  
+                                    }
+                                    
+                                    else if(n%5 == 0){
+                                              return "Buzz!";
+                                  
+                                    }
+                                    return n + "!";
+                                  }
+                                  
+                        </code>
+
+                        <code>
+                                public boolean twoAsOne(int a, int b, int c) {
+                                    return (a+b==c) || (a+c== b) || (b+c == a);
+                                  }
+                                  
+                        </code>
+
+                        <code>
+                                public boolean inOrder(int a, int b, int c, boolean bOk) {
+                                    if(bOk)
+                                    {
+                                      return (c > b);
+                                    }
+                                    else
+                                    {
+                                      return (a < b && b < c);
+                                    }
+                                  }
+                                  
                         </code>
                     </pre>
                 </td>
