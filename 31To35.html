@@ -57,6 +57,7 @@
             <li>Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.</li>
             <LI>The only person you are destined to become is the person you decide to be.</LI>
             <li>The secret of getting ahead is getting started.</li>
+            <li>If you spend too much time thinking about a thing, you'll never get it done.</li>
         </ol>
     </div>
     <hr>
@@ -188,6 +189,38 @@
                     <h1 class="red-box"> PADDING</h1>
                     
                         When you increase the blue box's padding, it will increase the distance (padding) between the text and the border around it.
+                </TD>
+            </TR>
+
+            <TR>
+                <TD>
+                    <!-- ARRAY WITH DIFFERENT VALUES-->
+                    var myArray = ["ANU", 321]; 
+
+                    <!-- ARRAYS WITHIN ARRAYS-->
+                    var myArray = [["the universe", 42], ["everything", 101010]];
+
+                    <!-- access first element-->
+                    var myData = myArray[0];
+
+                    <!-- MODIFY ARRAY VALUES -->
+                    myArray[0] = 45;
+
+                    <!-- ACCESS A COMPLEX ARRAY -->
+                    <PRE>
+                        <CODE>
+                                var arr = [
+                                [1,2,3],
+                                [4,5,6],
+                                [7,8,9],
+                                [[10,11,12], 13, 14]
+                              ];
+                              arr[3]; // equals [[10,11,12], 13, 14]
+                              arr[3][0]; // equals [10,11,12]
+                              arr[3][0][1]; // equals 11
+                        </CODE>
+                    </PRE>
+
                 </TD>
             </TR>
         </table>
@@ -395,7 +428,51 @@
                     </pre>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <pre>
+                        <code>
+                            public int blueTicket(int a, int b, int c) {
+  
+                                if(a+b == 10 || a+c == 10 || b+c == 10)
+                                  return 10;
+                                
+                                else if(a+b == b+c+10 || a+b == a+c+10)
+                                  return 5;
+                                  
+                                else
+                                  return 0;
+                              }
+                        </code>
 
+                        <code>
+                            public boolean shareDigit(int a, int b) {
+                                int rightA = a % 10;
+                                int leftA  = a / 10;
+                                
+                                int rightB = b % 10;
+                                int leftB  = b / 10;
+                                
+                                return (rightA == rightB || rightA == leftB || leftA == leftB || leftA == rightB);
+                              }
+                              
+                        </code>
+
+                        <code>
+                            public int sumLimit(int a, int b) {
+  
+                                int length = String.valueOf(a+b).length();
+                                
+                                if(length ==  String.valueOf(a).length())
+                                    return a + b;
+                                else 
+                                return a;
+                              }
+                              
+                        </code>
+                    </pre>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <i>Getting to make a slight change. Python it is.</i>
@@ -490,51 +567,7 @@
                 </td>
             </tr>
 
-            <tr>
-                <td>
-                    <pre>
-                        <code>
-                            public int blueTicket(int a, int b, int c) {
-  
-                                if(a+b == 10 || a+c == 10 || b+c == 10)
-                                  return 10;
-                                
-                                else if(a+b == b+c+10 || a+b == a+c+10)
-                                  return 5;
-                                  
-                                else
-                                  return 0;
-                              }
-                        </code>
-
-                        <code>
-                            public boolean shareDigit(int a, int b) {
-                                int rightA = a % 10;
-                                int leftA  = a / 10;
-                                
-                                int rightB = b % 10;
-                                int leftB  = b / 10;
-                                
-                                return (rightA == rightB || rightA == leftB || leftA == leftB || leftA == rightB);
-                              }
-                              
-                        </code>
-
-                        <code>
-                            public int sumLimit(int a, int b) {
-  
-                                int length = String.valueOf(a+b).length();
-                                
-                                if(length ==  String.valueOf(a).length())
-                                    return a + b;
-                                else 
-                                return a;
-                              }
-                              
-                        </code>
-                    </pre>
-                </td>
-            </tr>
+           
         </table>
     </div>
 </body>
