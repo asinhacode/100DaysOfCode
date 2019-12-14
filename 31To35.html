@@ -345,6 +345,59 @@
 
             <tr>
                 <td>
+                    <pre>
+                        <code>
+                                public int redTicket(int a, int b, int c) {
+                                    if (a == b && b == c && c == 2)
+                                      return 10;
+                                      
+                                    else if (a == b && b == c)
+                                      return 5;
+                                    
+                                    else if(a != b && a != c)
+                                      return 1;
+                                      
+                                    else
+                                      return 0;
+                                  }
+                        </code>
+
+                        <code>
+                                public int greenTicket(int a, int b, int c) {
+
+                                    if(a == b && b == c)
+                                     return 20;
+                                   
+                                     else if(a == b || b == c || a == c)
+                                       return 10;
+                                    
+                                     else
+                                     
+                                     return 0;
+                                     
+                                   
+                                 }
+                                 
+                        </code>
+
+                        <code>
+                                public boolean inOrderEqual(int a, int b, int c, boolean equalOk) 
+                                {
+                                  
+                                  if(equalOk)
+                                  {
+                                    return (a <= b && b <= c);
+                                  }
+                                  
+                                    return (a < b && b < c);
+                                }
+                        </code>
+                    </pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
                     <i>Getting to make a slight change. Python it is.</i>
                     <pre>
                         <code>
