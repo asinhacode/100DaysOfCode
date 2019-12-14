@@ -489,6 +489,52 @@
                    
                 </td>
             </tr>
+
+            <tr>
+                <td>
+                    <pre>
+                        <code>
+                            public int blueTicket(int a, int b, int c) {
+  
+                                if(a+b == 10 || a+c == 10 || b+c == 10)
+                                  return 10;
+                                
+                                else if(a+b == b+c+10 || a+b == a+c+10)
+                                  return 5;
+                                  
+                                else
+                                  return 0;
+                              }
+                        </code>
+
+                        <code>
+                            public boolean shareDigit(int a, int b) {
+                                int rightA = a % 10;
+                                int leftA  = a / 10;
+                                
+                                int rightB = b % 10;
+                                int leftB  = b / 10;
+                                
+                                return (rightA == rightB || rightA == leftB || leftA == leftB || leftA == rightB);
+                              }
+                              
+                        </code>
+
+                        <code>
+                            public int sumLimit(int a, int b) {
+  
+                                int length = String.valueOf(a+b).length();
+                                
+                                if(length ==  String.valueOf(a).length())
+                                    return a + b;
+                                else 
+                                return a;
+                              }
+                              
+                        </code>
+                    </pre>
+                </td>
+            </tr>
         </table>
     </div>
 </body>
