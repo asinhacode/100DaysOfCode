@@ -3,6 +3,9 @@
 
 <style>
    
+   #oops{
+       background-color:bisque;
+   }
     h1{
         text-align: center;
     }
@@ -27,6 +30,13 @@
         text-align: justify;
         font-size: 15px;
     }
+
+    /* EACH HTML TAG IS BOX */
+    .red-box{
+        background-color: red;
+        color: #fff; /* TEXT */
+        padding: 20px;
+    }
 </style>
 
 <head>
@@ -36,18 +46,24 @@
 <body>
 
     <div class="quotes">
-        <h1>Quotes</h1>
+        <h1 class="red-box">Quotes</h1>
         <ol>
             <li>What you do speaks so loudly that I cannot hear what you say.</li>
             <li>Watch your thoughts, for they become words. Watch your words, for they become actions. Watch your actions, for they become habits. Watch your habits, for they become character. Watch your character, for it becomes your destiny</li>
             <li>Success isn't owned. It is leased, and rent is due everyday.</li>
+            <li>We delight in the beauty of the butterfly, but rarely admit the changes it has gone through to achieve that beauty.</li>
+            <li>Good judgment comes from experience, and a lot of that comes from bad judgment.</li>
+            <li>The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.</li>
+            <li>Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.</li>
+            <LI>The only person you are destined to become is the person you decide to be.</LI>
+            <li>The secret of getting ahead is getting started.</li>
         </ol>
     </div>
     <hr>
 
     <!-- TABLE OF CONTENTS -->
     <div class="topics">
-        <h1>Table of Content</h1>
+        <h1 class="red-box">Table of Content</h1>
         <ol>
             <li><a href="#freeCodeCamp">freeCodeCamp</a></li>
             <li><a href="#oops">oops</a></li>
@@ -59,7 +75,7 @@
     </div>
 <hr>
     <div id="freeCodeCamp">
-        <h2>freeCodeCamp</h2>
+        <h2 class="red-box">freeCodeCamp</h2>
         <p>The adventures into web development and all its related contents.</p>
 
         <table>
@@ -104,12 +120,82 @@
 
                 </td>
             </tr>
+
+            <tr>
+                <!-- Buttons -->
+                <td>
+                    <i>type : radio, name associates all rabio buttons within a group</i>
+                    <br>
+                        <label> 
+                                <input type="radio" name="indoor-outdoor">Indoor 
+                        </label>
+                    <br>
+                        <i>id : associates with input</i>
+                        <br>
+                        <label for="indoor"> 
+                                <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
+                        </label>
+
+                        <br>
+                        <xmp>
+                                    <label for="indoor"> 
+                                            <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
+                                    </label>
+                        </xmp>
+                        <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <i>
+                        If you want to make sure a field is filled out, make it REQUIRED
+                    </i>
+                    <br>
+                    <pre>
+                        <code>
+                         <input type="text" required>
+                        </code>
+                    </pre>
+                </td>
+            </tr>
+
+            <!-- RADIO BUTTON GROUP -->
+            <tr>
+                <td>
+                    <i> Radio button group </i>
+                    <br>
+                    <ol>
+                        <li> label : connecting the word to the circle</li>
+                        <li> for : connection</li>
+                        <li> type : radio</li>
+                        <li> id : helps to make it unique</li>
+                        <li> name: makes the whole thing connected to radio group</li>
+
+                    </ol>
+                                <label for="indoor">
+                                <input type="radio" id="indoor" name="indoor-outdoor"> Indoor </label>
+                            
+                                <label for="outdoor">
+                                <input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor </label>
+                </td>
+            </tr>
+
+            <!-- PADDING -->
+
+            <TR>
+                <TD>
+                    <h1 class="red-box"> PADDING</h1>
+                    
+                        When you increase the blue box's padding, it will increase the distance (padding) between the text and the border around it.
+                </TD>
+            </TR>
         </table>
     </div>
     <hr>
 
     <div id="oops">
-        <h2>oops</h2>
+        <h2 class="red-box">oops</h2>
         <table>
             <th>
                 OOPS
@@ -199,6 +285,155 @@
                                   
                         </code>
                     </pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <pre>
+                        <code>
+
+                            public boolean lastDigit(int a, int b, int c) {
+                                // get last digit
+                                int A = a % 10;
+                                int B = b % 10;
+                                int C = c % 10;
+                                
+                                return A == B || A == C || B == C;
+                            }
+                            
+                            public boolean lessBy10(int a, int b, int c) {
+                                
+                                int A = Math.abs(a - b);
+                                int B = Math.abs(b - c);
+                                int C = Math.abs(a - c);
+                                
+                                return (A > 9 || B > 9 || C > 9);
+                            }
+                            
+                            public int withoutDoubles(int die1, int die2, boolean noDoubles) 
+                            {
+                                if(noDoubles)
+                                {
+                                if(die1 == die2) // same value
+                                {
+                                    ++die1;
+                                    
+                                    if(die1 == 7) // wrap aound to 1 when over 6
+                                    die1 = 1;
+                                }
+                                }
+                                    return die1 + die2;
+                                }
+                            
+                            public int maxMod5(int a, int b) 
+                            {
+                                if(a == b)
+                                return 0;
+                                
+                                else if(a % 5 == b % 5)
+                                return Math.min(a,b);
+                                
+                                else
+                                return Math.max(a,b);
+                            
+                            }
+                        </code>
+                    </pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <i>Getting to make a slight change. Python it is.</i>
+                    <pre>
+                        <code>
+                                print("Hello World")
+                                print(2+3)
+            
+            
+                                # cannot mix int and character
+                                # variable declaration
+                                character_name = "John"
+                                character_age = "35"
+            
+                                print("There once was a man name " + character_name)
+                                print("He was " + character_age + " years old.")
+            
+                                # Types of variable
+                                character_name = "Sinha"
+                                character_age = 28
+                                character_height = 5.10
+                                isMale = True
+            
+                                # Escape Sequence
+                                print("He said, \"I am who I am\"")
+            
+                                # Funtions of string
+                                phrase = "I am, who I am."
+                                print(phrase.lower().isupper())
+            
+                                #  length of the string
+                                print(len(phrase))
+            
+                                # 4th character
+                                print(phrase[3])
+            
+                                # index of a character
+                                print(phrase.index("m"))
+            
+                                # replace
+                                print(phrase.replace("I am", "Who I am"))
+            
+                                # Numbers
+                                pos = 2
+                                decimal = 2.9
+                                neg = -2
+            
+                                print(pos)
+                                print(decimal)
+                                print(neg)
+            
+                                print(pos * neg)
+            
+                                # using numbers with strings
+                                print(str(neg) + " trying to turn it into a " + str(pos))
+            
+                                # absolute values
+                                print(abs(neg))
+            
+                                # convert a number into a string
+                                troubled_twos = str(neg)
+                                print("I am " + troubled_twos)
+            
+                                # some more functions
+                                print(pow(pos, -4))
+                                print(min(pos, neg))
+                                print(round(pow(pos,neg)))
+            
+                                # importing library
+                                from math import *
+                                print(ceil(decimal)) # from math library
+            
+                                # math is a module
+            
+            
+                                # ask for user input
+                                name = input("Enter your name: ")
+                                print("Hello " + name)
+            
+                                # input() always a string
+                                age = input("Enter your age: ")
+                                print("You are: " + age)
+            
+                                # convert age into a number.
+                                age = int(age)
+                                print("Double your age: " )
+                                print(2 * age)
+                                print("You are: " + str(age))
+                        </code>
+                    </pre>
+                   
                 </td>
             </tr>
         </table>
