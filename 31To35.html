@@ -15,7 +15,7 @@
     }
 
     table, th, td {
-  border: 1px solid black;
+  border: 2px dotted black;
   text-align: center;
 }
     
@@ -58,6 +58,14 @@
             <LI>The only person you are destined to become is the person you decide to be.</LI>
             <li>The secret of getting ahead is getting started.</li>
             <li>If you spend too much time thinking about a thing, you'll never get it done.</li>
+            <LI>The mind can often mistake the talking for the doing.</LI>
+            <li>There is only one thing that makes a dream impossible to achieve: the fear of failure.</li>
+            <li>There are no short cuts to any place worth going.</li>
+            <li>Don't watch the clock; do what it does. Keep going.</li>
+            <li>Even if you're on the right track, you'll get run over if you just sit there.</li>
+            <li>The best advice I've ever received: 'no one else knows what they're doing either.'</li>
+            <li>Every strike brings me closer to the next home run.</li>
+            <li>The mind can often mistake the talking for the doing.</li>
         </ol>
     </div>
     <hr>
@@ -83,6 +91,36 @@
             <th>
                 FREECODECAMP
             </th>
+            <tr>
+                <td>
+                    <pre>
+                        <code>
+                            var lastElement = array.pop();
+                        </code>
+
+                        <code>
+                            var removedFromFront = myArray.shift();
+
+                        </code>
+
+                        <code>
+                                var myArray = [["John", 23], ["dog", 3]];
+                                myArray.shift();
+                                
+                                <i> Add at the beginning of the array<br></i>
+                                myArray.unshift(["Paul", 35]);
+                        </code>
+                    </pre>
+<hr>
+                    <ol>
+                        <li>push() - add at the end</li>
+                        <li>pop() - remove from end</li>
+                        <li>shift() - remove from front</li>
+                        <li>unshift() - add in front</li>
+
+                    </ol>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <p>
@@ -147,6 +185,7 @@
                 </td>
             </tr>
 
+            <!-- required -->
             <tr>
                 <td>
                     <i>
@@ -192,6 +231,15 @@
                 </TD>
             </TR>
 
+            <tr>
+                <td>
+                    <pre>
+                        <code>
+                            
+                        </code>
+                    </pre>
+                </td>
+            </tr>
             <TR>
                 <TD>
                     <!-- ARRAY WITH DIFFERENT VALUES-->
@@ -223,6 +271,87 @@
 
                 </TD>
             </TR>
+
+            <tr>
+                <td>
+                    <pre>
+                        <code>
+
+                            <!-- add values to the end of array -->
+                            var arr = [1,2,3];
+                            arr.push(4);
+                            // arr is now [1,2,3,4]
+                        </code>
+
+                        <code>
+                            <i> value is required if you want the response to make sense</i>
+                                <label for="indoor"> 
+                                        <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor 
+                                      </label>
+                                      <label for="outdoor"> 
+                                        <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor 
+                                      </label>
+                        </code>
+
+                        <!-- checked -->
+                        <code>
+                            <i>Checked makes the box ticked to start with.</i>
+                                <input type="radio" name="test-name" checked>
+                        </code>
+                    </pre>
+                </td>
+            </tr>
+
+            <!-- CREATE A BORDER -->
+            <tr>
+                <td>
+                    <pre>
+                        <code>
+                                .thin-red-border {
+                                    border-color: red;
+                                    border-width: 5px;
+                                    border-style: solid;
+                                  }
+                        </code>
+                    </pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <i> ID attribute</i>
+                    <pre>
+                        <!-- only used once -->
+                        <code>
+                            #cat-photo-element {
+                                background-color: green;
+                              }
+                        </code>
+
+                        <!-- PADDING SEPERATION -->
+                        <code>
+                                .blue-box {
+                                    background-color: blue;
+                                    color: #fff;
+                                    padding-top: 40px;
+                                    padding-left: 40px;
+                                    padding-bottom: 20px;
+                                    padding-right: 20px;
+                                  }
+                        </code>
+
+                        <code>
+                            <p>padding-top, padding-right, padding-bottom, and padding-left</p>
+                            <br>
+                            <i>Instead of writing seperately: padding: 10px 20px 10px 20px;
+
+                                </i>
+                                padding: 40px 20px 20px 40px;
+
+                        </code>
+                    </pre>
+                </td>
+            </tr>
         </table>
     </div>
     <hr>
@@ -567,6 +696,70 @@
                 </td>
             </tr>
 
+            <TR>
+                <TD>
+                       <PRE>
+                           <CODE>
+                                # A single line comment
+
+                        # add 2 numbers
+                        print(-10 + 11)
+                        
+                        # variables make sense the moment you assign values to them.
+                        myName = "notImportant"
+                        
+                        # print part of name
+                        print(myName[2:])
+                        
+                        # convert to upper
+                        print(myName.upper())
+                        
+                        # create a list
+                        natural = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                        print(natural)
+                        
+                        # print part of the list
+                        print(natural[2:6])
+                        
+                        # adding to the end
+                        natural.append(10)
+                        print(natural.reverse())
+                        
+                        # insert at a particular index
+                        natural.insert(0, -1)
+                        print(natural)
+                        
+                        # add a layer of complexity
+                        complexity = {2: 'u', 0: 'A', 1: 'n', 3: 'p', 4: 'a', 5: 'm'}
+                        print(complexity)
+                        
+                        # add individual members
+                        print(complexity[0] + complexity[1] + complexity[2] + complexity[3] + complexity[4] + complexity[5])
+                        
+                        # use the get method
+                        print(complexity.get(5))
+                        
+                        # add another element
+                        complexity[6] = '.'
+                        print(complexity)
+                        
+                           </CODE>
+                       </PRE>
+                        
+                </TD>
+            </TR>
+
+            <tr>
+                <td>
+                    <pre>
+                        <code>
+                            <i>STRINGS ARE IMMUTABLE</i>
+
+
+                        </code>
+                    </pre>
+                </td>
+            </tr>
            
         </table>
     </div>
