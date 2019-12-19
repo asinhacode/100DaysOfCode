@@ -7,36 +7,15 @@
 
 <!-- CSS -->
 <style>
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
 
-/* Control the left side */
-.left {
-  left: 0;
-  background-color: #ff0;
-}
-
-/* Control the right side */
-.right {
-  right: 0;
-  background-color: red;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+h2, h3, h4, h5{
   text-align: center;
+  background-color: orangered;
 }
 
+body{
+  background-color: silver;
+}
 
 </style>
 
@@ -67,8 +46,7 @@
 
     <!-- OOPs-->
 
-    <div class="split left">
-        <div class="centered">
+   
 
 
           <h2>OBJECT ORIENTED PROGRAMMING</h2>
@@ -131,18 +109,82 @@
                     <li>Definition</li>
                     <li>Arithmetic Sequence: Initial Term + (Common Difference * term number)</li>
                     <li>Geometric Sequence: Initial Term * (Common Ration^ term number)</li>
+                    <li>Recurrence Relation
+                      <ul>
+                        <li>Definition</li>
+                        <li>Initial term required</li>
+                        <li>Solving Recurrence Relation using closed formula</li>
+                        <li>The iterative approach</li>
+                      </ul>
+                      
 
+                    </li>
                   </ol>
-                
-        </div>
-      </div>
-      
+     
+      <hr>
     <!-- FREE CODE CAMP -->
-      <div class="split right">
-        <div class="centered">
+      
           <h2>FREE CODE CAMP</h2>
-          <p>Some text here too.</p>
-        </div>
-      </div>
+         <hr>
+         <h3>
+           CSS selector
+         </h3>
+
+         <ol>
+           <li> Instead of using ID or CLASS, use a different type of  selector
+             <pre>
+             <code>
+              [type='radio'] {
+                margin: 20px 0px 20px 0px;
+              }
+             </code>
+           </pre></li>
+
+           <li>Selection the entire body 
+             <pre>
+               <code>
+                 
+                
+                  body {
+                    background-color: black;
+                    color: green;
+                    font-family: monospace;
+                  }
+                
+                
+                <h1>Hello World</h1>
+              
+               </code>
+             </pre>
+           </li>
+
+           <li>
+             <h3>OVERRIDING</h3>
+             Determining which class to choose from. The narrower one wins
+             <pre>
+               <code>
+
+               </code>
+             </pre>
+           </li>
+
+           <li>
+             <h3>OVERRIDING with multiple classes</h3>
+             Depending on its appearance in style section, the overriding works.
+             <pre>
+               <code>
+                  
+                .pink-text {
+                  color: pink;
+                }
+              .blue-text{
+                  color: blue;
+                }
+               </code>
+             </pre>
+             <p>blue text will override pink text when used together.</p>
+           </li>
+         </ol>
+        
 </body>
 </html>
