@@ -269,7 +269,7 @@ body{
         // Declare your variable here
         // global variable
         var myGlobal = 10;
-        
+
         function fun1() {
           // Assign 5 to oopsGlobal Here
         oopsGlobal = 5;
@@ -288,6 +288,43 @@ body{
         }
 
       </CODE>
+
+      <code>
+
+        It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
+        var outerWear = "T-Shirt";
+
+        function myOutfit() {
+          // Only change code below this line
+        
+          var outerWear = "sweater";
+        
+          // Only change code above this line
+          return outerWear;
+        }
+        
+        myOutfit();
+      </code>
+
+      <!-- RETURN -->
+      <code>
+
+        function timesFive(n){
+          return n * 5;
+        }
+      </code>
+
+      <code>
+        <!-- ASSIGNMENT with a return -->
+        ourSum = sum(5, 12);
+      </code>
+
+      <code>
+        --penguin-skin: gray; <!-- CUSTOM VARIABLE CREATION -->
+        background: var(--penguin-skin); <!-- USING CUSTOM VARIABLES-->
+
+
+      </code>
      </pre>
 </body>
 </html>
