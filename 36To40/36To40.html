@@ -333,5 +333,125 @@ body{
 
       </code>
      </pre>
+
+     <h5>DAY 40</h5>
+     <pre>
+       <code>
+        function equalityTest(myVal) {
+          if (myVal == 10) {
+             return "Equal";
+          }
+          return "Not Equal";
+        }
+
+        
+       </code>
+
+       <code>
+        <i>TYPE COERCION: Converting int to string and vice versa</i>
+<br>
+        1   ==  1   // true
+        1   ==  2   // false
+        1   == '1'  // true
+        "3" ==  3   // true
+       </code>
+
+       <code>
+        // Setup
+        function testEqual(val) {
+          if (val == 12) { // Change this line
+            return "Equal";
+          }
+          return "Not Equal";
+        }
+        
+        // Change this value to test
+        testEqual(10);
+       </code>
+
+       <code>
+         <i>STRICT EQUALITY OPERATOR:</i>
+         3 ===  3   // true
+        3 === '3'  // false
+
+        <I> NO TYPE COERSION OCCURS</I>
+       </code>
+
+       <CODE>
+        // Setup
+        function testStrict(val) {
+          if (val === 7) { // Change this line
+            return "Equal";
+          }
+          return "Not Equal";
+        }
+        
+        // Change this value to test
+        testStrict(10);
+        
+       </CODE>
+
+       <CODE>
+         typeof : determines the data type of a variable
+
+         typeof 3 returns number
+       </CODE>
+
+       <code>
+         <i>NOT EQUAL</i>
+         function testGreaterThan(val) {
+          if (val > 100) {  // Change this line
+            return "Over 100";
+          }
+        
+          if (val > '10') {  // Change this line
+            return "Over 10";
+          }
+        
+          return "10 or Under";
+        }
+        
+        // Change this value to test
+        testGreaterThan(10);
+       </code>
+     </pre>
+
+     <p>
+       <pre>
+         <code>
+
+
+          #include <stdio.h>
+            #include <limits.h> // used to get the max and min
+            
+            int main(int argc, const char * argv[]) {
+            
+                printf("Hello, World!\n");
+                
+                // variables
+                int start = 0;
+                printf("%d\n", start);
+                
+                // start with letter
+                int END = 9;
+                
+                // sizeof : find size of data type
+                printf("%d\n", sizeof(short int));
+                
+                // signed : neg to pos
+                // default: acceps neg as well
+                int neg = start - END;
+                printf("%d\n", neg);
+                
+                unsigned neG = neg;
+                printf("%d\n", neG);
+                
+                printf("%d\n", INT_MIN); // OBTAINED BY USING <LIMITS.H>
+            
+            }
+  
+         </code>
+       </pre>
+     </p>
 </body>
 </html>
