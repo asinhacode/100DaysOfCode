@@ -1,1 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<HEAD>
+    <link rel = "stylesheet"
+    type = "text/css"
+    href = "100Days.css" />
+</HEAD>
+
+<body>
+    <h1> DAY 41 TO 45</h1>
+    <table>
+
+        <th>python</th>
+        <tr>
+            <td>
+                <i>2D LIST AND NESTED LOOPS</i>
+                <pre>
+                    <code>
+                        # 2 d list
+                        grid = [[0,1,2,3,4], [5,6,7,8,9,]]
+                        print(grid)
+                        
+                        # access first list
+                        print(grid[0])
+                        
+                        # access 2nd list 2nd element
+                        print(grid[1][2])
+                        
+                        # looping through
+                        for row in grid:
+                            print(row)
+                            for col in row:
+                                print(col) # print individual element from the row
+                        
+                        
+                    </code>
+<hr>
+                    <code>
+                        # translate
+                        # chane any vowels to letter g
+                        def translate(phrase):
+                            changed = ""
+                            for letter in phrase:
+                                # if letter in "AEIOUaeiou":
+                                if letter.lower() in "aeiou": # change it to lower case
+
+                                    changed += "g"
+                                else:
+                                    changed += letter
+                            return changed
+
+                        print(translate("Anupam"))
+
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <th>JAVA</th>
+    </table>
+
+    <table>
+        <TH>C</TH>
+
+        <tr>
+            <td>
+                <pre>
+                    <code>
+                            // moving it on the screen
+                            printf("%s\n", "Hello");
+                            printf("%10s\n", "Hello");
+                            
+                            // char data type
+                            char c = 50;
+                            printf("%c\n", c);
+                            printf("%d\n", c);
+                            
+                            // signed vs unsigned
+                            unsigned i = 1;
+                            int j = -4;
+                            printf("%d\n", i + j);
+                            printf("%u\n", i + j); // convert into 1s complement
+                    </code>
+                </pre>
+            </td>
+        </tr>
+        <hr>
+
+    </table>
+
+    <table>
+        <TH>DATA STRUCTURES</TH>
+    </table>
+
+    <table>
+        <TH>SQL</TH>
+    </table>
+
+    <table>
+        <th>
+            FREECODECAMP
+        </th>
+
+        <tr>
+            <td>
+                <h2> Javascript</h2>
+                <pre>
+                    <code>
+                        var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+                        function golfScore(par, strokes) 
+                        {
+                        // Only change code below this line
+                        if(strokes == 1)
+                        return "Hole-in-one!";
+
+                        else if(strokes <= par - 2)
+                        return "Eagle";
+
+                        else if(strokes == par - 1)
+                        return "Birdie";
+
+                        else if (strokes == par)
+                        return "Par";
+
+                        else if (strokes == par + 1)
+                        return "Bogey";
+
+                        else if (strokes == par + 2)
+                        return "Double Bogey";
+
+                        else
+                        return "Go Home!";
+                        // Only change code above this line
+                        }
+
+                        // Change these values to test
+                        golfScore(5, 4);
+
+                    </code>
+                    <hr>
+
+                    <code>
+
+                        <h2>SWITCH</h2>
+                        <i>case values are tested with strict equality (===).</i>
+                        
+                        function caseInSwitch(val) {
+                            var answer;
+                            
+                            // Only change code below this line
+                            switch(val)
+                            {
+                            case 1:
+                              answer = "alpha";
+                              break;
+                          
+                            case 2:
+                              answer = "beta";
+                              break;
+                          
+                            case 3:
+                              answer = "gamma";
+                              break;
+                          
+                            case 4:
+                              answer = "delta";
+                              break;
+                            }
+                            // Only change code above this line
+                            return answer;
+                          }
+                          
+                          // Change this value to test
+                          caseInSwitch(1);
+                          
+                    </code>
+                    <hr>
+
+                    <code>
+                        function switchOfStuff(val) {
+                            var answer = "";
+                            // Only change code below this line
+                          switch(val)
+                          {
+                              case 'a':
+                              answer = "apple";
+                              break;
+                          
+                              case 'b':
+                              answer = "bird";
+                              break;
+                          
+                              case 'c':
+                              answer = "cat";
+                              break;
+                          
+                              default:
+                              answer = "stuff";
+                              break;
+                          
+                          }
+                          
+                          
+                            // Only change code above this line
+                            return answer;
+                          }
+                          
+                          // Change this value to test
+                          switchOfStuff(1);
+                          
+                    </code>
+                    <hr>
+
+                    <code>
+                        <i>MULTIPLE CASES CONDITION</i>
+                        function sequentialSizes(val) {
+                            var answer = "";
+                            // Only change code below this line
+                          
+                            switch(val)
+                            {
+                              case 1:
+                              case 2: 
+                              case 3:
+                                answer = "Low";
+                                break;
+                          
+                              case 4:
+                              case 5:
+                              case 6:
+                                answer = "Mid";
+                                break;
+                          
+                          
+                              case 7:
+                              case 8:
+                              case 9:
+                                answer = "High";
+                                break;
+                          
+                            }
+                          
+                          
+                            // Only change code above this line
+                            return answer;
+                          }
+                          
+                          // Change this value to test
+                          sequentialSizes(1);
+                          
+                    </code>
+                    <hr>
+
+                </pre>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
 
