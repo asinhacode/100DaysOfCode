@@ -9,6 +9,8 @@
 
 <body>
     <h1> DAY 41 TO 45</h1>
+
+    <!-- PYTHON -->
     <table>
 
         <th>python</th>
@@ -58,10 +60,78 @@
         </tr>
     </table>
 
+    <BR>
+
+        <!-- JAVA -->
     <table>
         <th>JAVA</th>
+        <tr>
+            <td>
+                <pre>
+                    <code>
+                        package week3;
+
+                public class Arrays 
+                {
+
+                    public static void main(String[] args)
+                    {
+                        String[] rank = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K",};
+                        String[] suit = {"♠", "♣", "♦", "♥"};
+                        
+                        String[] deck = new String[52];
+                        String[] without = new String[52];
+                        
+                            for(int i = 0; i < (rank.length); i++)
+                            {
+                                for(int j = 0; j < suit.length; j++)
+                                {
+                                    deck[i + 13*j] = " " + rank[i]+ " "+suit[j];
+                                    without[i + 13*j] = " " + rank[i]+ " "+suit[j];
+
+                                }
+                            }
+                            
+                            for(int k = 0; k < deck.length; k++)
+                            {
+                                if(k % 13 == 0)
+                                    System.out.println();
+                                
+                                System.out.print(deck[k]);
+                            }
+                            System.out.println();
+                            System.out.println();
+
+                        /*
+                        * for(int l = 0; l < 15; l++) { System.out.print(deck[(int) (Math.random() *
+                        * 52)] + " "); // with replacement // can get the same card twice BORING }
+                        */
+                            
+                            for(int l = 0; l < 15; l++)
+                            {
+                                int z =(int) (Math.random() * (52 - l));
+                                
+                                String temp = without[z];
+                                without[z] = without[l];
+                                without[l] = temp;
+                            }
+                            
+                            for(int l = 0; l < 15; l++)
+                            {
+                                System.out.print(without[(int) (Math.random() * 52)] + " "); // with replacement
+                                // can get the same card twice BORING
+                            }
+                    }
+
+                }
+
+                    </code>
+                </pre>
+            </td>
+        </tr>
     </table>
 
+    <!-- C PROGRAMMING -->
     <table>
         <TH>C</TH>
 
@@ -89,24 +159,70 @@
         </tr>
         <hr>
 
+        <TR>
+            <TD>
+                <PRE>
+                    <CODE>
+
+                        // GLOBAL VARIABLE
+                        int a = -1;
+
+                        void printGlobal(){
+                            printf("GLOBAL A: %d\n", a); // CAN BE USED HERE
+                        }
+
+                        int main(int argc, const char * argv[])
+                        {
+
+                            // scope
+                            int a = 0;
+                            {
+                                // internal scope only available here
+                                int a = 1;
+                                printf("INTERNAL A: %d\n", a);
+                            }
+                            
+                            // a available here
+                            printf("EXTERNAL A: %d\n", a);
+                            
+                            printGlobal();
+                    </CODE>
+                </PRE>
+            </TD>
+        </TR>
+
     </table>
 
+    <!-- DATA STRUCTURES -->
     <table>
         <TH>DATA STRUCTURES</TH>
     </table>
 
+    <!-- SQL -->
     <table>
         <TH>SQL</TH>
+
+        <ol>
+            <li>
+                CREATE DATABASE movies;
+            </li>
+
+            <li>
+                DROP DATABASE movies;
+            </li>
+
+            <li>
+                
+            </li>
+        </ol>
     </table>
 
+    <!-- JAVASCRIPT -->
     <table>
-        <th>
-            FREECODECAMP
-        </th>
+        <TH>Javascript</TH>
 
         <tr>
             <td>
-                <h2> Javascript</h2>
                 <pre>
                     <code>
                         var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
@@ -257,7 +373,84 @@
                 </pre>
             </td>
         </tr>
+
+        <tr>
+            <td>
+                <pre>
+                    <code>
+                        <i> CARD COUNTING</i>
+                        var count = 0;
+
+                        function cc(card) {
+                        // Only change code below this line
+                        switch(card)
+                        {
+                        case 2: case 3: case 4: case 5: case 6:
+                        count++;
+                        break;
+
+                        case 7: case 8: case 9:
+                        break;
+
+                        case 10: case 'J': case 'Q': case 'K': case 'A':
+                        count--;
+                        break;
+                        }
+
+
+                        if(count > 0)
+                        return count + " Bet";
+
+                        else
+                        return count + " Hold";  
+                        // Only change code above this line
+                        }
+
+
+                        // Add/remove calls to test your function.
+                        // Note: Only the last will display
+                        cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+                    </code>
+                </pre>
+            </td>
+        </tr>
     </table>
+<br>
+<br>
+
+<!-- CSS -->
+    <TABLE>
+        <TH>CSS</TH>
+        <TR>
+
+            <TD>
+
+                :root is a pseudo-class selector that matches the root element of the document,
+                 usually the html element.<BR> By creating your variables in :root, they will be available globally and can be accessed from any other selector in the style sheet.
+            </TD>
+
+        </TR>
+
+        <tr>
+            <td>
+                <pre>
+                    <code>
+                        :root {
+
+                            /* add code below */
+                            --penguin-belly: pink;
+                            /* add code above */
+                          }
+                    </code>
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                OVERWRITE custom variables in specific classes. 
+            </td>
+        </tr>
+    </TABLE>
 </body>
 </html>
-
