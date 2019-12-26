@@ -58,6 +58,30 @@
                 </pre>
             </td>
         </tr>
+
+        <TR>
+            <TD>
+                <PRE>
+                    <CODE>
+                        # r - read, w - overrite, a - append at the end
+                        person = open("Info.txt", "a")
+                        print(person.writable())
+
+                        person.write("\nDate of Birth: 0/0/0")
+                        person.write("\nStatus: ALIVE")
+                        person.write("\nBored!")
+
+                        # create an html file
+                        info = open("index.html", "a") # append at the end
+                        info.write("<h1> Writing via PYTHON</h1>") # add proper tags
+
+
+                        person.close()
+
+                    </CODE>
+                </PRE>
+            </TD>
+        </TR>
     </table>
     <br>
     <BR>
@@ -222,6 +246,55 @@
                 </PRE>
             </TD>
         </TR>
+
+        <hr>
+        <tr>
+            <td>
+                <pre>
+                    <code>
+                            #include <stdio.h>
+                            #include <limits.h>
+                            #include <stdbool.h> // incorporating boolean values
+                            
+                            int A; // GLOBAL VARIABLE, has default values
+                            bool t = true;
+                            
+                            int main(int argc, const char * argv[])
+                            {
+                            
+                                auto int x;
+                                
+                                printf("%d\n", x);
+                                
+                                printf("%d\n", A);
+                                
+                                printf("%d\n", A);
+                                
+                                if(t)
+                                {
+                                    printf("This is the truth!\n"); // prints this
+                                }
+                            
+                                else
+                                printf("This is not the truth!\n");
+                            
+                                
+                            }
+                            
+                            #include <stdio.h>
+                            
+                            extern int a; // obtained from an external file external.c
+                            int main(int argc, const char * argv[])
+                            {
+                            
+                                printf("%d\n", a);
+                            
+                                
+                            }
+                    </code>
+                </pre>
+            </td>
+        </tr>
 
     </table>
 <br>
@@ -450,6 +523,65 @@
                 </pre>
             </td>
         </tr>
+
+        <tr>
+            <td>
+                <pre>
+                    <code>
+                        <i> OBJECT CREATION: </i>
+                        var myDog = {
+                            "name": "mimi",
+                            "legs": 2,
+                            "tails": 0,
+                            "friends":["Jit", "PC"]
+                            };
+                    </code>
+                </pre>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <pre>
+                    <code>
+                        <!-- ACCESS via variable -->
+                        var dogs = {
+                            Fido: "Mutt",  Hunter: "Doberman",  Snoopie: "Beagle"
+                          };
+                          var myDog = "Hunter";
+                          var myBreed = dogs[myDog];
+                          console.log(myBreed); // "Doberman"
+                    </code>
+
+                    <code>
+                        var someObj = {
+                            propName: "John"
+                          };
+                          function propPrefix(str) {
+                            var s = "prop";
+                            return s + str;
+                          }
+                          var someProp = propPrefix("Name"); // someProp now holds the value 'propName'
+                          console.log(someObj[someProp]); // "John"
+
+
+                    </code>
+
+                    <code>
+                        var myDog = {
+                            "name": "Coder",
+                            "legs": 4,
+                            "tails": 1,
+                            "friends": ["freeCodeCamp Campers"]
+                          };
+                          
+                          // update a set object variable
+                          myDog.name = "Happy Coder";
+                    </code>
+
+                </pre>
+            </td>
+        </tr>
     </table>
 <br>
 <br>
@@ -484,6 +616,49 @@
         <tr>
             <td>
                 OVERWRITE custom variables in specific classes. 
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <pre>
+                    <code>
+                        background-color: rgba(45, 45, 45, 0.1);
+                        <i> alpha : 1 solid </i>
+                        <i>         0 : transparent.</i>
+                    </code>
+                </pre>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <pre>
+                    <code>
+                        <!-- BOX SHADOW PROPERTY -->
+                        #thumbnail{
+                            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                          
+                          }
+                    </code>
+
+                    <code>
+                        opacity: 0.7; <!-- 1 = totally dark, 0: invisible -->
+                    </code>
+
+                    <code>
+                        lowercase	"transform me"
+                        uppercase	"TRANSFORM ME"
+                        capitalize	"Transform Me"
+                        initial	Use the default value
+                        inherit	Use the text-transform value from the parent element
+                        none	Default: Use the original text
+                    </code>
+
+                    <code>
+                        text-transform: uppercase;
+                    </code>
+                </pre>
             </td>
         </tr>
     </TABLE>
