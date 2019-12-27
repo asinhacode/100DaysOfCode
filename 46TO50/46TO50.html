@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>DAY 46 TO DAY 50</h1>
+
+        <OL>
+            <LI id="py"> python </LI>
+            <LI id="algo">  ALGORITHMS</LI>
+            <LI id="oops"> JAVA </LI>
+        </OL>
+
+        <table id="python">
+            <th>PYTHON</th>
+            <tr>
+                <td>
+                    <pre>
+                        <code>
+                            placeHolder = 110
+                            print(placeHolder)
+
+                            array = "youtube"
+                            print(array)
+                            print(array[2:])
+
+                            # list creation
+                            nums = [1,2,3,4]
+                            reverse = [9,8,7,6]
+
+                            # add eleemnt from other lists
+                            total = [nums[0] + reverse[0], nums[1] + reverse[1], nums[2] + reverse[2], nums[3] + reverse[3]]
+                            print(total)
+
+                            # print each element
+                            for x in total:
+                                print(x)
+
+                            # add at the end
+                            total.append(9)
+                            print(total)
+
+                            total.pop()
+                            # reverse the list
+                            total.reverse()
+                            print(total)
+
+                            # remove from the end
+                            total.pop()
+                            print(total)
+
+                            total.append(72)
+                            print(total)
+
+                            # add elements in a list
+                            for i in range(10):
+                                total.append(i)
+
+                            print(total)
+                            total.reverse()
+                            print(total)
+
+                            for i in total:
+                                if i == 10:
+                                    total.remove(i)
+
+                            print(total)
+                            print(max(total))
+                            print(min(total))
+                            total.remove(0)
+
+                            print(total)
+                            print(max(total) - min(total))
+                        </code>
+                    </pre>
+                </td>
+            </tr>
+        </table>
+
+        <table id="algorithms">
+            <TH>ALGORITHMS</TH>
+            <tr>
+                <TD>
+                    TREES
+                </TD>
+            </tr>
+
+            <hr>
+            <tr>
+                <td>
+                    <p>INTRODUCTION TO ARRAYLIST.</p>
+
+                    <pre>
+                        <code>
+
+                        package stacks;
+
+                        import java.util.ArrayList;
+                        import java.util.Arrays;
+
+                        public class List1 {
+
+                            public static void main(String[] args) 
+                            {
+                                ArrayList<Integer> l = new ArrayList<Integer>(); // create an array list
+                                ArrayList<Integer> m = new ArrayList<Integer>(); // create an array list
+                                ArrayList<Integer> z = new ArrayList<Integer>(6); // create an array list
+
+                                    
+                                System.out.println(l); // print the entire list, currently empty
+                                
+                                for(int i = 0; i < 10; i++)
+                                {
+                                    l.add(i * 2); // use the add method
+                                    m.add(i * -2);
+                                }
+                                
+                                System.out.println(l);
+                                
+                                System.out.println(l.size()); // display the size of the array list
+                                
+                                
+                                /*
+                                * Implement all the methods
+                                */
+                                
+                                l.add(4, -9); // add at a particular index
+                                System.out.println(l);
+                                
+                                
+                                System.out.println(l.add(-99)); // return boolean once added at the end
+                                
+                                /*
+                                * l.clear(); // clear the entire array list System.out.println(l);
+                                */
+                                
+                                
+                                l.addAll(m); // add another collection to it
+                                
+                                ArrayList<Integer> n = (ArrayList<Integer>) m.clone();
+                                System.out.println(n);
+                                
+                                System.out.println(l);
+                                System.out.println(l.contains(-99)); // boolean see whether the value is present in the arraylist
+                                System.out.println(l.get(4));
+                                
+                                System.out.println(l.indexOf(-9)); // get the index of
+
+                                System.out.println(l.isEmpty());
+                                
+                                l.add(-99); // add -99
+                                System.out.println(l);
+                                System.out.println("Last index of -99: " +l.lastIndexOf(-99)); // there are 2 instances of -99
+                                
+                                l.remove(22); // remove 22 from the arraylist
+                                System.out.println(l);
+                                System.out.println("Index of -99: " + l.lastIndexOf(-99));
+                                
+                                l.set(11, -100);
+                                System.out.println(l);
+
+                                System.out.println("SIZE OF L: " + l.size());
+                                
+                                System.out.println(Arrays.toString(l.toArray()));
+                                
+                                Object[] L = l.toArray();
+                                System.out.println(Arrays.toString(L));
+                                
+                                l.trimToSize();
+                                
+                                z.add(0);
+                                z.add(1);
+                                z.add(2);
+                                z.add(3);
+                                
+                                System.out.println(z.size());
+                                System.out.println(z);
+                                z.trimToSize();
+                                System.out.println(z);
+
+
+
+                            }
+
+                        }
+
+                        </code>
+                    </pre>
+                </td>
+            </tr>
+        </table>
+
+        <table id="Java">
+            <th>
+                JAVA PROGRAMMING ADVENTURES
+            </th>
+            <tr>
+                <td>
+                    <pre>
+                        <code>
+                        package one;
+
+                        public class Calculator 
+
+                        {
+
+                            public static void main(String[] args) 
+                            {
+                                String shakespear = "To be or not to be, that is the question.";
+                                System.out.println(shakespear);
+                                
+                                if(shakespear.length() < 15)
+                                {
+                                    System.out.println("All that glitters is not gold");
+                                }
+                                
+                                else
+                                {
+                                    System.out.println("All the world's a stage,\n" + 
+                                            "\n" + 
+                                            "And all the men and women merely players:\n" + 
+                                            "\n" + 
+                                            "They have their exits and their entrances;\n" + 
+                                            "\n" + 
+                                            "And one man in his time plays many parts.");
+                                }
+                            }
+
+                        }
+
+                        </code>
+                    </pre>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
