@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+    
+<style>
+    table, th, td {
+  border: 1px solid black;
+  text-align: justify;
+  padding: 10px;
+}
+
+th{
+  text-align: center;
+}
+
+H1, H2{
+    text-align: center;
+    background-color: coral;
+}
+
+h2{
+    text-transform: capitalize;
+}
+
+h1,h2{
+  color: white;
+  background-color: teal;
+}
+
+body{
+    margin: 50px;
+    background-color:white;
+}
+</style>
+    <head>
+        <title>
+            Day 51 to Day 55
+        </title>
+    </head>
+
+    <body>
+
+        <h1> Day 51 to Day 55 </h1>
+        <HR>
+
+<!-- TABLE OF CONTENT -->
+            <H2>table of content</H2>
+        <ol>
+            <li><a href="#freeCodeCamp">CodeCamp</a></li>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#algorithms">Algorithms</a></li>
+
+        </ol>
+
+
+
+
+<HR>
+
+  <!-- FREE CODE CAMP -->
+
+        <div id="freeCodeCamp">
+            <h2>FreeCodeCamp</h2>
+            <table style="width:100%">
+                <tr>
+                  <th>Topic</th>
+                  <th>Code</th> 
+                </tr>
+                <tr>
+                  <td><b>Hue, Saturation and Lightness</b></td>
+                  <td>Hue is what people generally think of as 'color'. If you picture a spectrum of colors starting with red on the left, moving through green in the middle, and blue on right, the hue is where a color fits along this line. In hsl(), hue uses a color wheel concept instead of the spectrum, where the angle of the color on the circle is given as a value between 0 and 360.
+
+                    Saturation is the amount of gray in a color. A fully saturated color has no gray in it, and a minimally saturated color is almost completely gray. This is given as a percentage with 100% being fully saturated.
+                    
+                    Lightness is the amount of white or black in a color. A percentage is given ranging from 0% (black) to 100% (white), where 50% is the normal color.
+                    
+                    Here are a few examples of using hsl() with fully-saturated, normal lightness colors:
+                  <i>courtesy of freecodecamp</i></td> 
+                </tr>
+                <tr>
+                 
+                  <td> <b>Accessing complex objects</b></td>
+                  <td><pre>
+                    <code>
+                      var ourStorage = {
+                        "desk": {
+                          "drawer": "stapler"
+                        },
+                        "cabinet": {
+                          "top drawer": { 
+                            "folder1": "a file",
+                            "folder2": "secrets"
+                          },
+                          "bottom drawer": "soda"
+                        }
+                      };
+                      ourStorage.cabinet["top drawer"].folder2;  // "secrets"
+                      ourStorage.desk.drawer; // "stapler"
+                    </code>
+                  </pre></td> 
+                </tr>
+
+                <tr>
+                  <td>
+                    <b>Acessing nested arrays</b>
+                  </td>
+
+                  <td>
+                    <pre>
+                      <code>
+                        var ourPets = [
+                      {
+                        animalType: "cat",
+                        names: [
+                          "Meowzer",
+                          "Fluffy",
+                          "Kit-Cat"
+                        ]
+                      },
+                      {
+                        animalType: "dog",
+                        names: [
+                          "Spot",
+                          "Bowser",
+                          "Frankie"
+                        ]
+                      }
+                    ];
+                    ourPets[0].names[1]; // "Fluffy"
+                    ourPets[1].names[0]; // "Spot"
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+
+                <tr>
+                 
+                  <td> <b>Do...while</b></td>
+                  <td>
+                    <pre>
+                      <code>
+                        var ourArray = [];
+                        var i = 0;
+                        do {
+                          ourArray.push(i);
+                          i++;
+                        } while (i < 5);
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+              </table>
+        </div>
+
+
+
+  <!-- JAVA -->
+
+        <div id="java">
+            <h2>Java</h2>
+            <table style="width:100%">
+                <tr>
+                  <th>Topic</th>
+                  <th>Code</th> 
+                </tr>
+                <tr>
+                  <td>Variable Length Argument</td>
+                  <td>
+                    <pre>
+                      <code>
+                        package four;
+
+                      /**
+                      * FInd the maximum from VARIABLE length arguments
+                      * @author anupamsinha
+                      *
+                      */
+                      public class Variable 
+                      {
+
+                        public static void main(String[] args) 
+                        {
+                          System.out.println("Maximum: " + findMax(100000,2,3,400,3,2,5,1,7876));
+                          System.out.println("Minimum: " + findMin(100000,-2,3,400,3,2,5,1,7876));
+
+                        }
+                        
+                        // variable length argument
+                        static int findMax(int ...value)
+                        {
+                          int max = Integer.MIN_VALUE;
+                          
+                          for(int i : value)
+                          {
+                            max = Math.max(max, i);
+                          }
+                          
+                          return max;
+                        }
+                        
+                        // find the minimum
+                        static int findMin(int ...variable)
+                        {
+                          int min = Integer.MAX_VALUE;
+                          
+                          for(int j : variable)
+                          {
+                            min = Math.min(min, j);
+                          }
+                          
+                          return min;
+                        }
+
+                      }
+
+                      </code>
+                    </pre>
+                  </td> 
+                </tr>
+                <tr>
+                  <td>Composition_1 - main </td>
+                  <td><pre>
+                    <code>
+                      package six;
+
+                      public class Composition 
+                      {
+
+                        public static void main(String[] args) 
+                        {
+                          Info i = new Info("Anupam", "3 rappar rd", 1800, 1862);
+                          
+                          System.out.println(i.allTogether());
+                          
+                          i.increment5();
+                        }
+
+                      }
+
+                    </code>
+                  </pre></td> 
+                </tr>
+
+                <tr>
+                  <td>Composition_2 - using another class within it</td>
+                  <td><pre>
+                    <code>
+                      package six;
+
+                    public class Info {
+
+                      public String name;
+                      public String address;
+                      
+                      public Age min; 
+                      
+                      public Info(String n, String a, int b, int c)
+                      {
+                        name = n;
+                        address = a;
+                        min = new Age(b,c);
+                      }
+                      
+                      public String allTogether()
+                      {
+                        return "Name: " + name + "\n" + "Address: \"" + address + "\"\n" + "Age: " + min.yourAge()+ " years old.";
+                      }
+                      
+                      public void increment5()
+                      {
+                        for(int i = min.getBirthYear(); i <= min.getCurrentYear(); i += 5)
+                        {
+                          System.out.println(i);
+                        }
+                      }
+                    }
+
+                    </code>
+                  </pre></td> 
+                </tr>
+
+                <tr>
+                  <td>composition_3 - a base class</td>
+                  <td>
+                    <pre>
+                      <code>
+                        package six;
+
+                        public class Age 
+                        {
+                          private int birthYear;
+                          private int currentYear;
+                          
+                          public Age(int birth, int current)
+                          {
+                            birthYear = birth;
+                            currentYear = current;
+                          }
+                          
+                          public int yourAge() {
+                            return currentYear - birthYear;
+                          }
+
+                          public int getBirthYear() {
+                            return birthYear;
+                          }
+
+                          public void setBirthYear(int birthYear) {
+                            this.birthYear = birthYear;
+                          }
+
+                          public int getCurrentYear() {
+                            return currentYear;
+                          }
+
+                          public void setCurrentYear(int currentYear) {
+                            this.currentYear = currentYear;
+                          }
+                        }
+
+                      </code>
+                    </pre>
+                  </td> 
+                </tr>
+              </table>
+        </div>
+
+
+
+
+
+        <!-- PYTHON -->
+
+
+        <div id="python">
+            <h2>Python</h2>
+            <table style="width:100%">
+                <tr>
+                  <th>Topic</th>
+                  <th>Code</th> 
+                </tr>
+                <tr>
+                  <td><b>Variables</b></td>
+                  <td><pre>
+                      <code>
+                        # variable declaration
+                        origin = 0
+                        afterMuchWork = origin + 1
+
+                        # convert int to string otherwise, cannot concatenate
+                        print("Where we begin: " + str(origin))
+                        print("Then I work hard and reach: " + str(afterMuchWork))
+
+                        # string indexed :
+                        #  0  1  2  3
+                        #  y  o  u  t
+                        # -4 -3 -2 -1
+
+                        yout = "YOUT"
+                        print(yout[2])
+                        print(yout[-2])
+
+                        # variable substring
+                        print(yout[0:3]) # 0 1 2 or you
+
+                      </code>
+                  </pre></td> 
+                </tr>
+                <tr>
+                  
+                  <td><b>Lists</b></td>
+                  <td><pre>
+                    <code>
+                      print("Lists")
+
+                      # declaration
+                      even = [0,2,4,6,8]
+                      odd  =  [1,3,5,7,9]
+
+                      print(even)
+                      print(even[-2]) # same as string
+                      print(even[3:])
+                      print(odd[0:3])
+
+                      added = even + odd # add 2 lists into 1
+                      print(added)
+
+                      # lists can contain any type of data type
+                      letter = [1, 'A', 2, 'E', 3, 'I', 4, 'O', 5, 'U']
+                      print(letter)
+
+                      # zero is still zero
+                      zero = [0, 0.00]
+                      print(zero)
+
+                      # reverse
+                      added.reverse()
+                      print(added)
+
+                      # sort
+                      added.sort()
+                      print(added)
+
+                      # max and sum
+                      max = max(added)
+                      sum = sum(added)
+                      print(max)
+                      print(sum)
+                    </code>
+                  </pre></td> 
+                </tr>
+
+                <tr>
+                  <td>N/A</td>
+                  <td>N/A</td> 
+                </tr>
+
+                <tr>
+                  <td>N/A</td>
+                  <td>N/A</td> 
+                </tr>
+
+                <tr>
+                  <td>N/A</td>
+                  <td>N/A</td> 
+                </tr>
+
+
+                <tr>
+                  <td>N/A</td>
+                  <td>N/A</td> 
+                </tr>
+
+                <tr>
+                  <td>N/A</td>
+                  <td>N/A</td> 
+                </tr>
+              </table>
+        </div>
+
+
+
+
+
+        <!-- ALGORITHMS -->
+        <div id="algorithms">
+            <h2>Algorithms</h2>
+            <table style="width:100%">
+                <tr>
+                  <th>Topic</th>
+                  <th>Code</th> 
+                </tr>
+                <tr>
+                  <td>N/A</td>
+                  <td>N/A</td> 
+                </tr>
+                <tr>
+                  <td>N/A</td>
+                  <td>N/A</td> 
+                </tr>
+              </table>
+        </div>
+    </body>
+</html>
