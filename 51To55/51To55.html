@@ -6,6 +6,7 @@
   border: 1px solid black;
   text-align: justify;
   padding: 10px;
+
 }
 
 th{
@@ -28,7 +29,6 @@ h1,h2{
 
 body{
     margin: 50px;
-    background-color:white;
 }
 </style>
     <head>
@@ -68,7 +68,7 @@ body{
                 </tr>
                 <tr>
                   <td><b>Hue, Saturation and Lightness</b></td>
-                  <td>Hue is what people generally think of as 'color'. If you picture a spectrum of colors starting with red on the left, moving through green in the middle, and blue on right, the hue is where a color fits along this line. In hsl(), hue uses a color wheel concept instead of the spectrum, where the angle of the color on the circle is given as a value between 0 and 360.
+                  <td style="font-family: monospace">Hue is what people generally think of as 'color'. If you picture a spectrum of colors starting with red on the left, moving through green in the middle, and blue on right, the hue is where a color fits along this line. In hsl(), hue uses a color wheel concept instead of the spectrum, where the angle of the color on the circle is given as a value between 0 and 360.
 
                     Saturation is the amount of gray in a color. A fully saturated color has no gray in it, and a minimally saturated color is almost completely gray. This is given as a percentage with 100% being fully saturated.
                     
@@ -147,6 +147,224 @@ body{
                         } while (i < 5);
                       </code>
                     </pre>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                      Creating a complex data structure
+                  </td>
+
+                  <td>
+                    <pre>
+                      <code>
+
+                        // Setup
+                    var collection = {
+                      2548: {
+                        album: "Slippery When Wet",
+                        artist: "Bon Jovi",
+                        tracks: [
+                          "Let It Rock",
+                          "You Give Love a Bad Name"
+                        ]
+                      },
+                      2468: {
+                        album: "1999",
+                        artist: "Prince",
+                        tracks: [
+                          "1999",
+                          "Little Red Corvette"
+                        ]
+                      },
+                      1245: {
+                        artist: "Robert Palmer",
+                        tracks: [ ]
+                      },
+                      5439: {
+                        album: "ABBA Gold"
+                      }
+                    };
+                    
+                    // Only change code below this line
+                    function updateRecords(id, prop, value) {
+                    
+                    
+                      return collection;
+                    }
+                    
+                    // Alter values below to test your code
+                    updateRecords(5439, "artist", "ABBA");
+                    
+                      </code>
+                    </pre>
+                    
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                      Recurssion
+                  </td>
+
+                  <td>
+
+                    <pre>
+                      <code>
+                        function multiply(arr, n) {
+                          var product = arr[0];
+                          for (var i = 1; i <= n; i++) {
+                              product *= arr[i];
+                          }
+                          return product;
+                        }
+                      </code>
+                    </pre>
+                   
+
+                    <hr>
+                    <pre>
+                      <code>
+                        function multiply(arr, n) {
+                          if (n <= 0) {
+                            return arr[0];
+                          } else {
+                            return multiply(arr, n - 1) * arr[n];
+                          }
+                        }
+                      </code>
+                    </pre>
+                   
+
+                    <hr>
+
+                    <pre>
+                      <code>
+                        function sum(arr, n) {
+                          // Only change code below this line
+                          if(n == 0)
+                            return arr[0];
+                        
+                          else
+                          {
+                            return sum(arr, n - 1) + arr[n];
+                          }
+                          // Only change code above this line
+                        }
+                      </code>
+                    </pre>
+                    
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>OBJECTS</td>
+                  <td>
+                    <pre>
+                      <code>
+                        var cat = {
+                          "name": "Whiskers",
+                          "legs": 4,
+                          "tails": 1,
+                          "enemies": ["Water", "Dogs"]
+                        };
+                      </code>
+
+                      <pre>
+                        <code>
+
+                          var myDog = 
+                          {
+                            "name" : "Rassar",
+                            "legs" : 4,
+                            "tails": 1,
+                            "friends": ["Caact", "Rea", "Daad"]
+                          };
+                        </code>
+                      </pre>
+                    </pre>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                        Accessing Using Dot Notation
+                  </td>
+
+                  <td>
+                      <pre>
+                        <code>
+                          // Setup
+                          var testObj = {
+                            "hat": "ballcap",
+                            "shirt": "jersey",
+                            "shoes": "cleats"
+                          };
+
+                          // Only change code below this line
+
+                          var hatValue = testObj.hat;      // Change this line
+                          var shirtValue = testObj.shirt;    // Change this line
+
+                        </code>
+                      </pre>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Accessing using brackets</td>
+                  <td>
+                    <pre>
+                      <code>
+
+                        // Setup
+                        var testObj = {
+                          "an entree": "hamburger",
+                          "my side": "veggies",
+                          "the drink": "water"
+                        };
+
+                        // Only change code below this line
+
+                        var entreeValue = testObj["an entree"];   // Change this line
+                        var drinkValue = testObj["the drink"];    // Change this line
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Using variables to access objects
+                  </td>
+
+                  <td>
+                    <pre>
+                      <code>
+                        // Setup
+                        var testObj = {
+                          12: "Namath",
+                          16: "Montana",
+                          19: "Unitas"
+                        };
+
+                        // Only change code below this line;
+
+                        var playerNumber = 16;       // Change this Line
+                        var player = testObj[playerNumber];   // Change this Line
+
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Transition the colors.</td>
+                  <td> 
+                    <pre>
+                      <code> background-color: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+                      </code>
+                      </pre>
                   </td>
                 </tr>
               </table>
@@ -322,6 +540,156 @@ body{
                     </pre>
                   </td> 
                 </tr>
+
+                <tr>
+                  <td>SWING</td>
+                  <td>
+                    <pre>
+                      <code>
+                        String fn = JOptionPane.showInputDialog("Enter first number:\t");
+                        String ln = JOptionPane.showInputDialog("Enter second number:\t");
+
+                        int first = Integer.parseInt(fn);
+                        int second = Integer.parseInt(ln);
+                        
+                        
+                        // null = where to appear, center
+                        // The answer is : 
+                        // title bar
+                        JOptionPane.showMessageDialog(null, "Sum: "+ (first+second) , "Title", JOptionPane.PLAIN_MESSAGE );
+                        JOptionPane.showMessageDialog(null, "Diff: "+ (first-second) , "Title", JOptionPane.PLAIN_MESSAGE );
+                        JOptionPane.showMessageDialog(null, "Mul: "+ (first*second) , "Title", JOptionPane.PLAIN_MESSAGE );
+                        JOptionPane.showMessageDialog(null, "Div: "+ (first/second) , "Title", JOptionPane.PLAIN_MESSAGE );
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Polymorphism
+                  </td>
+
+                  <td>
+                    <pre>
+                      <code>
+
+                        package nine;
+
+                        public class Alive {
+                        
+                          public static void main(String[] args) {
+                            Meat fish = new Meat();
+                            fish.eat();
+                            fish.why();
+                            printLn();
+                        
+                            food f = new food();
+                            f.eat();
+                            printLn();
+                        
+                            Vegetables v = new Vegetables();
+                            v.eat();
+                            printLn();
+                        
+                            // the data type can be a superclass
+                            food g = new Meat();
+                            g.eat();
+                            printLn();
+                            // g cannot access why() method
+                        
+                            // example
+                            food a[] = new food[3];
+                            a[0] = new food();
+                            a[1] = new Meat();
+                            a[2] = new Vegetables();
+                        
+                            printLn();
+                        
+                            // polymorphic array
+                            for (int i = 0; i < 3; i++) {
+                              a[i].eat();
+                            }
+                        
+                            printLn();
+                        
+                            Eater miu = new Eater();
+                            food material = new food(); // Eater takes food argument
+                        
+                            miu.digest(material);
+                            miu.digest(a[1]); // can take its subclasses as well.
+                            miu.digest(a[2]);
+                            miu.digest(f);
+                        
+                          }
+                        
+                          static void printLn() {
+                            System.out.println();
+                          }
+                        
+                        }
+
+                        <hr>
+                        
+                        package nine;
+
+                        public class food {
+                        
+                          void eat()
+                          {
+                            System.out.println("We all eat food. ");
+                          }
+                        }
+
+                        
+                        <hr>
+
+                        package nine;
+
+                        public class Meat extends food{
+                        
+                          // overwritten
+                          void eat()
+                          {
+                            System.out.println("Some of us eat meat. ");
+                          }
+                          
+                          void why()
+                          {
+                            System.out.println("Meat has concentrated protein.");
+                          }
+                        }
+
+                        <hr>
+                        package nine;
+
+                        public class Vegetables extends food
+                        {
+                          void why()
+                          {
+                            System.out.println("Good for digestions");
+                          }
+                          
+                          void eat()
+                          {
+                            System.out.println("Vegetables too, but they are not that tasty");
+                          }
+                        }
+
+                        <hr>
+
+                        package nine;
+                        public class Eater {
+                        
+                          public void digest(food x) {
+                            x.eat();
+                          }
+                        }
+                        
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
               </table>
         </div>
 
@@ -411,24 +779,141 @@ body{
                 </tr>
 
                 <tr>
-                  <td>N/A</td>
-                  <td>N/A</td> 
+                  <td>id to find variable address</td>
+                  <td><pre>
+                    <code>
+
+                      print(id(10))
+
+                      a = 10 # same address as 10
+                      print(id(a))
+
+                      b = a
+                      print(id(b)) # same address as 10
+
+                      b = 9
+                      print(id(b)) # different address
+
+
+                    </code>
+                  </pre></td> 
                 </tr>
 
                 <tr>
-                  <td>N/A</td>
-                  <td>N/A</td> 
+                  <td>Lists, Tuples and Sets</td>
+                  <td>
+                    <pre>
+                      <code>
+                        print("A tuple is a collection which is ordered and unchangeable")
+
+                        # declaration
+                        tup = (1,3,5,7,9, 5,11,8,9,3,1,1,1,1,1)
+
+                        print("count() method searches the given element in a tuple and returns how many times the element has occurred in it.")
+                        c = tup.count(1)
+                        print(c)
+
+                        # list is declared using []
+
+                        # tuple with ()
+
+                        # sets with {}
+
+                        # no duplicates, no order
+                        setA = {1,2,3,2,3,1,3}
+
+                        print(setA)
+
+                        setA.remove(1)
+
+                        print(setA)
+
+
+                      </code>
+                    </pre>
+                  </td> 
                 </tr>
 
                 <tr>
-                  <td>N/A</td>
-                  <td>N/A</td> 
+                  <td>Dictionary</td>
+                  <td>
+                    <pre>
+                      <code>
+                        
+                        # Data Types in Python
+
+                        start = 5.6
+                        print(type(start))
+
+                        step2 = int(start)
+                        print(type(step2))
+
+                        listOfEven = [0, 2, 4, 6, 8, 10]
+                        print(type(listOfEven))
+
+                        # appends to a list but as a set!
+                        setOfOdd = {1, 3, 5, 7, 9}
+                        listOfEven.append(setOfOdd)
+                        print(listOfEven)
+
+                        print(listOfEven[6])
+
+                        # list the range from 0 to 20
+                        print(list(range(20)))
+
+                        # range advanced
+                        # From...To...Increments
+                        print(list(range(-4, 16, 3)))
+                        print(list(range(-4, 26, 2)))
+                        print(list(range(-4, -16, -2)))
+
+                        # INTERESTING!
+                        print(list(range(-4, -16, 2)))
+
+                        # Sets into dictionary
+                        # !!! DICTIONARY !!!
+                        set1 = {'Anupam': 'Sinha', 'Nabamita': 'Maiti', 'Sharmistha': 'Sinha'}
+                        print(set1)
+                        print(set1.keys())
+                        print(set1.values())
+                        print(set1['Sharmistha'])
+                        print(set1['Sinha'])
+                      </code>
+                    </pre>
+                  </td> 
                 </tr>
 
 
                 <tr>
-                  <td>N/A</td>
-                  <td>N/A</td> 
+                  <td>Operators</td>
+                  <td>
+                    <pre>
+                      <code>
+                        x = 3
+                        y = 6
+                        
+                        print(x * y)
+                        print(y % x)
+                        
+                        # compound operator
+                        x *= 7
+                        print(x)
+                        
+                        # multiple declaration
+                        r, a, t = 18, 1, 20
+                        print(r)
+                        print(a)
+                        print(t)
+                        
+                        print(r > a)
+                        print(r > a and t < a)
+                        
+                        # conversion from decimal to binary
+                        print(bin(25))
+                        
+                      </code>
+                    </pre>
+                  </td> 
                 </tr>
 
                 <tr>
