@@ -1,0 +1,86 @@
+##### JavaScript #####
+
+1.
+
+Comments
+
+// or /* */
+
+2. 
+
+Variable Declaration
+
+ var myName;
+
+3
+
+Variable Assignment
+
+var a = 7;
+var b = a;
+
+4. 
+
+Naming Convention for variable: camelCase
+
+thisIsAVariable
+
+4.b
+
+Examples
+
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+5.
+
+Operators
+
+var value = 10 / 5;
+
+
+5.b
+
+Part 2 (remainder)
+
+10 % 3 = 1
+
+6.
+
+Increment / Decrement
+
+i++; 
+i--;
+
+##########################################################################
+
+##### WEB DEVELOPMENT #####
+1.	Heading	<h1>…</h1>
+		<h2>…</h2>
+		<h3>…</h3>
+		<h4>…</h4>
+		<h5>…</h5>
+		<h6>…</h6>
+    
+2	Image 	<img src="https://bit.ly/fcc-relaxing-cat" alt="hi kitty">
+
+3	Anchor 	<a href="http://freecatphotoapp.com"> cat photos </a>
+
+4	Opens new tab	target="_blank"
+
+5	Internal Link	  <a href="#footer" >Jump to Bottom</a>
+		
+		<footer id="footer">Copyright Cat Photo App</footer>
+    
+6	Nest an Anchor Element within a Paragraph	  Here's a <a target="_blank" href="http://freecodecamp.org"> link to freecodecamp.org</a> for you to follow.
+
+6.b	Example of nesting	
+<p>
+
+View more 
+<a href="http://freecatphotoapp.com" target="_blank">cat photos</a>
+
+</p>
+    
+7	Dead links, waiting till you get it!	<a href = "#"> </a>
